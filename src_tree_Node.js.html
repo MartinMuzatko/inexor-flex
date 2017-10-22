@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>src/tree/Node.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ConsoleWsAPI.html">ConsoleWsAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ConsoleWsAPI.html#handleRequest">handleRequest</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ConsoleWsAPI.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html">FilesystemRepositoryManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.addRepository">addRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.createRepository">createRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.get_sub_directories">get_sub_directories</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.scan">scan</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.scanAll">scanAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="FlexArgs.html">FlexArgs</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="FlexRestAPI.html">FlexRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FlexRestAPI.html#shutdown">shutdown</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="GitRepositoryManager.html">GitRepositoryManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.addRepository">addRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.checkoutBranch">checkoutBranch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.createRepository">createRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.get_sub_directories">get_sub_directories</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.getBranches">getBranches</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.getCurrentBranch">getCurrentBranch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.isGitRepository">isGitRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.mergeBranches">mergeBranches</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.mergeBranches">mergeBranches</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.scan">scan</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.scanAll">scanAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.update">update</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html">InexorTreeRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#convert">convert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#dumpInstanceTree">dumpInstanceTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#dumpRootTree">dumpRootTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#dumpSubTree">dumpSubTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#getInstanceNode">getInstanceNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#getRootNode">getRootNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#setInstanceNode">setInstanceNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#setRootNode">setRootNode</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html">InexorTreeWsAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html#addNode">addNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html#convert">convert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html#handleRequest">handleRequest</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html#syncNode">syncNode</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="InstancesRestAPI.html">InstancesRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#connectToInstance">connectToInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#createInstance">createInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#disconnectFromInstance">disconnectFromInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#getInstance">getInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#listInstances">listInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#removeInstance">removeInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#startAllInstances">startAllInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#startInstance">startInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#stopAllInstances">stopAllInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#stopInstance">stopInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#synchronizeWithInstance">synchronizeWithInstance</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="MediaManager.html">MediaManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaManager.html#addMedia">addMedia</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="MediaRepositoryManager.html">MediaRepositoryManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.getRepositoriesNode">getRepositoriesNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.getRepositoryNames">getRepositoryNames</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.getRepositoryPath">getRepositoryPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.getRepositoryPaths">getRepositoryPaths</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.getType">getType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.remove">remove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.scanAll">scanAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.scanAll">scanAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.update">update</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html">MediaRepositoryRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html#createMediaRepository">createMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html#removeMediaRepository">removeMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html#scanMediaRepositories">scanMediaRepositories</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html#updateMediaRepository">updateMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html#updateMediaRepositoryBranch">updateMediaRepositoryBranch</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-connector-Connector.html">Connector</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#addSynchronizeListener">addSynchronizeListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#addTreeNodeSyncListenersFromDefaults">addTreeNodeSyncListenersFromDefaults</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#closeGrpcConnection">closeGrpcConnection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#convert">convert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getDataType">getDataType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getDefaultValue">getDefaultValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getEventType">getEventType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getId">getId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getLoggerName">getLoggerName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getMessage">getMessage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getPath">getPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#linkTreeMounts">linkTreeMounts</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#loadInstanceConfiguration">loadInstanceConfiguration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#onNewTreeNode">onNewTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#onTreeNodeSync">onTreeNodeSync</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#populateInstanceTreeFromDefaults">populateInstanceTreeFromDefaults</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#removeGrpcListeners">removeGrpcListeners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#removeListeners">removeListeners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#removeTreeListeners">removeTreeListeners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#sendFinishedTreeIntro">sendFinishedTreeIntro</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#updateTree">updateTree</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-console-CommandManager.html">CommandManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-CommandManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-CommandManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html">ConsoleManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#createConsole">createConsole</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#getBuffer">getBuffer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#getInstanceLogger">getInstanceLogger</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#mapStreamToLog">mapStreamToLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#writeBuffer">writeBuffer</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-Entity.html">Entity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#addChild">addChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#addParent">addParent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#destroy">destroy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getChildEntities">getChildEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getIncomingRelationships">getIncomingRelationships</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getOutgoingRelationships">getOutgoingRelationships</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getParentEntities">getParentEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getType">getType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getUuid">getUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#isChildEntity">isChildEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#isParentEntity">isParentEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#removeChildEntity">removeChildEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#removeParentEntity">removeParentEntity</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-EntityManager.html">EntityManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityManager.html#getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityManager.html#getByUuid">getByUuid</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-EntitySystem.html">EntitySystem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntitySystem.html#getEntityManager">getEntityManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntitySystem.html#getEntityTypeManager">getEntityTypeManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntitySystem.html#getRelationshipManager">getRelationshipManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntitySystem.html#getRelationshipTypeManager">getRelationshipTypeManager</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-EntityType.html">EntityType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#getEntities">getEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#getName">getName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#getUuid">getUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#isEntityOfType">isEntityOfType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#isEntityRegistered">isEntityRegistered</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#register">register</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#unregister">unregister</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-EntityTypeManager.html">EntityTypeManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityTypeManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityTypeManager.html#getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityTypeManager.html#getByUuid">getByUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityTypeManager.html#remove">remove</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-Relationship.html">Relationship</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Relationship.html#disconnect">disconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Relationship.html#getEndEntity">getEndEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Relationship.html#getStartEntity">getStartEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Relationship.html#getType">getType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Relationship.html#getUuid">getUuid</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-RelationshipManager.html">RelationshipManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipManager.html#getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipManager.html#getByUuid">getByUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipManager.html#remove">remove</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html">RelationshipType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#getName">getName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#getUuid">getUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#isRelationshipOfType">isRelationshipOfType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#isRelationshipRegistered">isRelationshipRegistered</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#register">register</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#unregister">unregister</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html">RelationshipTypesManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html#getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html#getByName">getByName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html#getByUuid">getByUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html#remove">remove</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-gameclient-ScreenManager.html">ScreenManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameclient-ScreenManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameclient-ScreenManager.html#onInstanceConnected">onInstanceConnected</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameclient-ScreenManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-gameserver-IntermissionService.html">IntermissionService</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-IntermissionService.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-IntermissionService.html#onInstanceConnected">onInstanceConnected</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-IntermissionService.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html">MapRotationService</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html#getRandomMap">getRandomMap</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html#onIntermission">onIntermission</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html#setMap">setMap</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html">InstanceManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#disconnect">disconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getCurrentProfile">getCurrentProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getHostname">getHostname</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getInstancesByState">getInstancesByState</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getInstancesByType">getInstancesByType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getPort">getPort</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getTransition">getTransition</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#isValidInstanceType">isValidInstanceType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#killProcess">killProcess</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#loadInstances">loadInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#pause">pause</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#remove">remove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#resume">resume</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#saveInstances">saveInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#shutdownProcess">shutdownProcess</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#start">start</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#startAll">startAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#stop">stop</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#stopAll">stopAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#transist">transist</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html">LayerManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#createLayer">createLayer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#hideLayer">hideLayer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#reloadLayer">reloadLayer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#removeLayer">removeLayer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#setAcceptingKeyInput">setAcceptingKeyInput</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#setAcceptingMouseInput">setAcceptingMouseInput</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#setLayerUrl">setLayerUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#showLayer">showLayer</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-logging-LogManager.html">LogManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#createLogger">createLogger</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#getLogger">getLogger</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#loadLogConfiguration">loadLogConfiguration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#setLoglevel">setLoglevel</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-media-MapManager.html">MapManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#convert">convert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#createConfigTree">createConfigTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#findMapFiles">findMapFiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#getMapNames">getMapNames</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#loadMapConfiguration">loadMapConfiguration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#updateMaps">updateMaps</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-media-TextureManager.html">TextureManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-TextureManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-TextureManager.html#findTextureFilesByTypes">findTextureFilesByTypes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-TextureManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-TextureManager.html#updateTextures">updateTextures</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html">ProfileManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getAllProfiles">getAllProfiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getConfigPath">getConfigPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getCurrentProfile">getCurrentProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getCurrentProfileName">getCurrentProfileName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getDefaultProfile">getDefaultProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getDefaultProfileName">getDefaultProfileName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getProfile">getProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getProfilesConfigPath">getProfilesConfigPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#loadProfiles">loadProfiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#remove">remove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#saveProfiles">saveProfiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#setCurrentProfile">setCurrentProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#switchTo">switchTo</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Node.html">Node</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.addChild">addChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.addLink">addLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.addNode">addNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.firstChild">firstChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getChild">getChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getChildNames">getChildNames</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getName">getName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getOrCreateNode">getOrCreateNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getParent">getParent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getPath">getPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getRoot">getRoot</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.hasChild">hasChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.hasChildren">hasChildren</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.isChildOf">isChildOf</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.removeAllChildren">removeAllChildren</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.removeChild">removeChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.set">set</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.size">size</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.toJson">toJson</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.toObject">toObject</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.toString">toString</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#getFlatRepresentation">getFlatRepresentation</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="PidManager.html">PidManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PidManager.html#createPid">createPid</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ProcessManager.html">ProcessManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#createProcessHandlers">createProcessHandlers</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#onExit">onExit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#onReloadSignal">onReloadSignal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#onSegfault">onSegfault</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#onShutdownSignal">onShutdownSignal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#onUncaughtException">onUncaughtException</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ProfilesRestAPI.html">ProfilesRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProfilesRestAPI.html#createProfile">createProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProfilesRestAPI.html#dumpProfilesTree">dumpProfilesTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProfilesRestAPI.html#listProfiles">listProfiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProfilesRestAPI.html#removeProfile">removeProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProfilesRestAPI.html#switchToProfile">switchToProfile</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ReleaseManager.html">ReleaseManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#checkForNewReleases">checkForNewReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#downloadRelease">downloadRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#installRelease">installRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#loadReleases">loadReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#saveReleases">saveReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#uninstallRelease">uninstallRelease</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ReleasesRestAPI.html">ReleasesRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleasesRestAPI.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleasesRestAPI.html#fetchReleases">fetchReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleasesRestAPI.html#getRelease">getRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleasesRestAPI.html#listReleases">listReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleasesRestAPI.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Root.html">Root</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Root.html#.createRecursive">createRecursive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Root.html#.findNode">findNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Root.html#contains">contains</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="TreeClient.html">TreeClient</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#branchMediaRepository">branchMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#callEndpoint">callEndpoint</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#clientWindowFullscreen">clientWindowFullscreen</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#clientWindowMaximize">clientWindowMaximize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#clientWindowMinimize">clientWindowMinimize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#clientWindowRestore">clientWindowRestore</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#connectInstance">connectInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#createEndpoint">createEndpoint</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#createInstance">createInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#createMediaRepository">createMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#createProfile">createProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#deleteTreeNode">deleteTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#downloadRelease">downloadRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#dumpInstanceTree">dumpInstanceTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#fetchReleases">fetchReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getAllInstances">getAllInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getEndpointUrl">getEndpointUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getFlexVersion">getFlexVersion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getInstance">getInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getTreeNode">getTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#installRelease">installRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#listReleases">listReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#loadReleases">loadReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#readHJsonConfig">readHJsonConfig</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#readTOMLConfig">readTOMLConfig</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#removeInstance">removeInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#removeMediaRepository">removeMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#removeProfile">removeProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#saveReleases">saveReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#scanMediaRepositories">scanMediaRepositories</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#setTreeNode">setTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#shutdownFlex">shutdownFlex</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#startAllInstances">startAllInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#startInstance">startInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#stopAllInstances">stopAllInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#stopInstance">stopInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#switchProfile">switchProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#synchronizeInstance">synchronizeInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#uninstallRelease">uninstallRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#updateMediaRepository">updateMediaRepository</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html">WebUserInterfaceManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#createInterface">createInterface</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#disableInterface">disableInterface</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#enableInterface">enableInterface</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getAbsoluteFsPath">getAbsoluteFsPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getFullUrl">getFullUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getInterfaceNames">getInterfaceNames</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getPath">getPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getRelativeFsPath">getRelativeFsPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getRelativeUrl">getRelativeUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#interfaceExists">interfaceExists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#loadInterfaces">loadInterfaces</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#removeInterface">removeInterface</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#scanForInterfaces">scanForInterfaces</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#updateInterface">updateInterface</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#updateInterfaceNode">updateInterfaceNode</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-api.html">api</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-connector.html">connector</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-console.html">console</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-context.html">context</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-entities.html">entities</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-gameclient.html">gameclient</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-gameserver.html">gameserver</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-instances.html">instances</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-interfaces.html">interfaces</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-logging.html">logging</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-media.html">media</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-path.html">path</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-path.html#~getXdgLocationFromEnvironmentVariable">getXdgLocationFromEnvironmentVariable</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-profiles.html">profiles</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-releases.html">releases</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-tree.html">tree</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-treeclient.html">treeclient</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-types.html">types</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-types.html#~getDataType">getDataType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-types.html#~isInt">isInt</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="path%250A__%2520TODO_%2520Might%2520be%2520better%2520called%2520inexorgame_defaultsmodule_.html">path
+// TODO: Might be better called inexorgame/defaults</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~getBinaryPath">getBinaryPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~getConfigPaths">getConfigPaths</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~getExecutablePath">getExecutablePath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~getMediaPaths">getMediaPaths</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#DeterminesthefunctionnameasuploadedbyTraviscurrentlyNOTE:Keepthisup-todate!">Determines the function name as uploaded by Travis currently
+NOTE: Keep this up-to date!</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#isValidDataType">isValidDataType</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#media_types">media_types</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#repository_types">repository_types</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#separator">separator</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#validName">validName</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">src/tree/Node.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const EventEmitter = require('events');
+const JSON = require('circular-json');
+const util = require('./util')
+
+/**
+ * Represents a tree Node
+ * @todo Add a verbose logging system (shouldn't be difficult though)
+ */
+class Node extends EventEmitter {
+
+    /**
+     * @constructor
+     * @param {(Node|null)} - the parent node
+     * @param {string} name - Must not contain whitespace or dots
+     * @param {datatype} type - the data type to be used
+     * @param {mixed} initValue
+     * @param {boolean} sync
+     * @param {boolean} readOnly
+     */
+    constructor(parent, name, datatype, initialValue = null, sync = false, readOnly = false, protoKey = null) {
+        // parent constructor
+        super();
+
+        /**
+         * @private
+         * @property {Node} parent
+         */
+        this._parent = parent;
+
+        /**
+         * @private
+         * @property {string} _name
+         */
+        this._name = name;
+
+        /**
+         * @private
+         * @property {string} _protoKey
+         */
+        this._protoKey = protoKey;
+
+        /**
+         * @private
+         * @property {string} _path
+         */
+
+        // The path of the tree (unique)
+        if (parent != null) {
+            if (parent._path != util.separator) {
+                this._path = parent._path + util.separator + name;
+            } else {
+                this._path = util.separator + name;
+            }
+        } else {
+            this._path = util.separator;
+        }
+
+        /**
+         * @private
+         * @property {datatype} _datatype
+         */
+
+        // The data type of the Node
+        if (util.isValidDataType(datatype)) {
+            switch (datatype) {
+                case 'int32':
+                case 'int64':
+                case 'enum':
+                    this._datatype = 'int64';
+                    break;
+                default:
+                    this._datatype = datatype;
+                    break;
+            }
+        } else {
+            throw new Error('Invalid data type');
+        }
+
+        /**
+         * @private
+         * @property {boolean} _readOnly
+         *
+         * @todo this could be done using prototype defines
+         */
+        this._readOnly = readOnly;
+
+        /**
+         * Is a node a container (does it contain children)?
+         * @property {boolean} isContainer
+         */
+
+        /**
+         * Is the node a data leaf?
+         * @property {boolean} isLeaf - is the node a data leaf?
+         */
+
+        /**
+         * @private
+         * @property {mixed} _value
+         */
+
+        /**
+         * @private
+         * @property {Date} _timespamp
+         */
+
+        /**
+         * @private
+         * @property {boolean} _sync
+         */
+
+        // Check the node type (either node, link or a data item)
+        if (datatype == 'node') {
+            this.isContainer = true;
+            this.isLeaf = false;
+            // Initializes the map of child nodes.
+
+            this._value = new Map();
+        } else if (datatype == 'link') {
+            this.isContainer = initialValue.isContainer;
+            this.isLeaf = initialValue.isLeaf;
+            this._value = initialValue._value;
+        } else {
+            this.isContainer = false;
+            this.isLeaf = true;
+
+            // Sets the initial value.
+            if (initialValue != null) {
+                this._value = initialValue;
+            } else {
+                throw new Error('No initial value provided');
+            }
+
+            // Sets if the tree node should be synchronized.
+            this._sync = sync;
+        }
+    }
+
+    /**
+     * Returns the path of the tree node.
+     * @function
+     * @name Node.getPath
+     * @return {string}
+     */
+    getPath() {
+        return this._path;
+    }
+
+    /**
+     * Returns either the value or child nodes of the current node
+     * @function
+     * @name Node.get
+     * @return {mixed|Node[]}
+     */
+    get() {
+        return this._value;
+    }
+
+    /**
+     * Set the value of the tree node
+     * @function
+     * @name Node.set
+     * @param {mixed} value
+     * @param {boolean} preventSync - whether the value should be synchronized or not
+     * @fires Node.preSet
+     * @fires Node.postSet
+     * @fires Node.sync
+     */
+    set(value, preventSync = false) {
+        if (this.isLeaf &amp;&amp; !this._readOnly) {
+            let oldValue = this._value;
+            this.emit('preSet', {oldValue: oldValue, newValue: value});
+            // Update the value
+            this._value = value;
+
+            // Emit sync to be synchronized by the connector.
+            if (this._sync &amp;&amp; !preventSync) {
+                // this.emit('sync', value);
+                this.emit('sync', {oldValue: oldValue, newValue: value});
+            }
+
+            // Set the timestamp when the value was last changed
+            this._timestamp = Date.now();
+            this.emit('postSet', {oldValue: oldValue, newValue: value});
+            this.getRoot().emit('postSet', {node: this, oldValue: oldValue, newValue: value});
+        }
+    }
+
+    /**
+     * Checks whether the node has specified child or not
+     * @function
+     * @name Node.hasChild
+     * @param {string} name The name of the child
+     * @return {boolean} True, if there is a child with the given name.
+     */
+    hasChild(name) {
+        return this.isContainer &amp;&amp; this._value.has(name);
+    }
+
+    /**
+     * Checks whether the node has children
+     * @function
+     * @name Node.hasChildren
+     * @return {boolean} True, if the node is a container which has child nodes.
+     */
+    hasChildren() {
+        return !this.isContainer || !(this._value.size == 0);
+    }
+
+    /**
+     * Returns the number of children.
+     * @function
+     * @name Node.size
+     * @return {number} The number of children.
+     */
+    size() {
+        return this.isContainer ? this._value.size : 0;
+    }
+
+    /**
+     * Returns true, if the node is a child node (recursive) of other_node.
+     * @function
+     * @name Node.isChildOf
+     * @return {boolean}
+     */
+    isChildOf(other_node) {
+        if (other_node) {
+            let parent = this._parent;
+            while (parent._path != util.separator) {
+                if (parent._path == other_node._path) {
+                    return true;
+                }
+                parent = parent._parent;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Returns the root node (from parent)
+     * @function
+     * @name Node.getRoot
+     * @return {Root}
+     */
+    getRoot() {
+        if (this._path == util.separator) {
+            return this;
+        } else {
+            let root = this._parent;
+            while (root._path != util.separator) {
+                root = root._parent;
+            }
+            return root;
+        }
+    }
+
+    /**
+     * Returns the child with the given name.
+     * @function
+     * @name Node.getChild
+     * @param {string} name
+     * @return {Node|null}
+     */
+    getChild(name) {
+        if (this.hasChild(name)) {
+            return this._value.get(name);
+        } else {
+            return null;
+        }
+    }
+
+    /**
+     * Returns the first child of the Node
+     * @function
+     * @name Node.firstChild
+     * @return {Node|null}
+     */
+    firstChild() {
+        return (this.hasChildren()) ? this.getChild(this.getChildNames()[0]) : [];
+    }
+
+    /**
+     * Returns the child with the given name. If non-existent a node will be created.
+     * @function
+     * @name Node.getOrCreateNode
+     * @param {string} name
+     * @return {Node}
+     */
+    getOrCreateNode(name) {
+        if (this.hasChild(name)) {
+            return this.getChild(name);
+        } else {
+            return this.addNode(name);
+        }
+    }
+
+    /**
+     * Returns the name of the node itself.
+     * @function
+     * @name Node.getName
+     * @return {string} name the name of the node.
+     */
+    getName() {
+        return this._name;
+    }
+
+    /**
+     * Returns the child names
+     * @function
+     * @name Node.getChildNames
+     * @return {Array&lt;string>}
+     */
+    getChildNames() {
+        let keys = (this.hasChildren()) ? Array.from(this._value.keys()) : [];
+        return keys;
+    }
+
+    /**
+     * Adds a child to the node
+     * @function
+     * @name Node.addChild
+     * @param {string} name - The name of the child node.
+     * @param {tree.datatype} datatype - The datatype of the child node.
+     * @param {mixed} initialValue - The initial value of the child node. The type of the initial value must be the given datatype.
+     * @param {boolean} sync - If true, the node shall be synchronized automatically. If false, the child node exists locally only.
+     * @param {boolean} readOnly - If true, the node cannot be modified.
+     * @param {string} protoKey - The key in the .proto file.
+     * @return {Node}
+     * @see Node.constructor
+     * @fires Node.add
+     */
+    addChild(name, datatype, initialValue = null, sync = false, readOnly = false, protoKey = null) {
+        if (this.hasChild(name)) {
+            // TODO: we could update the value here, instead of silently returning the node with the previous value
+            return this.getChild(name);
+        } else if (name.indexOf('/') == 0) {
+            // TODO: the name shouldn't contain a slash at all (name.indexOf('/') >= 0)
+            // This is NOT the root leave, don't insert it like this
+            throw new Error('Child nodes shall not be prefixed with /');
+        } else if (this.isContainer &amp;&amp; util.validName.test.bind(name) &amp;&amp; util.isValidDataType(datatype)) {
+
+            // Create the child tree node
+            let childNode = new Node(this, name, datatype, initialValue, sync, readOnly, protoKey);
+
+            // Add the child tree node to the children map
+            this._value.set(name, childNode);
+
+            // JavaScript-Magic for transparent getters and setters
+            let self = this;
+            Object.defineProperty(self, name, {
+                get() {
+                    return (childNode.isContainer) ? childNode : childNode.get();
+                },
+                set(value) {
+                    childNode.set(value);
+                },
+                configurable: true,
+                writeable: !readOnly
+            });
+
+            if (sync) {
+                // Let the world know, that a new node was born
+                this.getRoot().emit('add', childNode);
+
+                // First sync of the newly created child node
+                childNode.emit('sync', {oldValue: null, newValue: initialValue});
+            }
+
+            return childNode;
+        } else {
+            var reason = "";
+            if (this.hasChild(name)) {
+                reason = "Child " + name + "already exists";
+            } else if (!this.isContainer) {
+                reason = "Parent node must be a container node: isContainer=" + String(this.isContainter);
+            } else if (!util.validName.test.bind(name)) {
+                reason = "Not a valid name:" + name;
+            } else if (!util.isValidDataType(datatype)) {
+                reason = "Not a valid data type: " + datatype;
+            }
+            throw new Error('Failed to create child node: ' + reason);
+        }
+    }
+
+    /**
+     * Adds a child node of type 'node' which is basically a container node.
+     * @function
+     * @name Node.addNode
+     * @property {string} name - The name of the child node.
+     * @alias Node.addChild
+     */
+    addNode(name) {
+        return this.addChild(name, 'node');
+    }
+
+    /**
+     * Adds a child node which is a link to another node in the tree.
+     * @function
+     * @name Node.addLink
+     * @property {string} name - The name of the child node.
+     * @property {Node} targetNode - The target node in the tree.
+     * @alias Node.addLink
+     */
+    addLink(name, targetNode) {
+        return this.addChild(name, 'link', targetNode);
+    }
+
+    /**
+     * Removes a child by name.
+     * @function
+     * @name Node.removeChild
+     * @param {string} name - The name of the child node.
+     * @param {boolean} force - Forces the removal even if the child node is readOnly.
+     * @return {boolean} True if the child node has been deleted. False if there wasn't a child node with the given name or the child node was read only.
+     */
+    removeChild(name, force = false) {
+        if (this.hasChild(name) &amp;&amp; (!this.getChild(name)._readOnly || force)) {
+            this._value.delete(name);
+            let self = this;
+            delete self[name];
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Removes all children.
+     * @function
+     * @name Node.removeAllChildren
+     */
+    removeAllChildren() {
+        if (this.isContainer) {
+            this._value.clear();
+        }
+    }
+
+    /**
+     * Returns the parent node or null if the tree node is the root node.
+     * @function
+     * @name Node.getParent
+     * @return {Node|null}
+     */
+    getParent() {
+        return (this._path != util.separator) ? this._parent : null;
+    }
+
+    /**
+     * Returns a JSON string representation of the node.
+     * @function
+     * @name Node.toString
+     * @return {string}
+     */
+    toString() {
+        if (this.isContainer) {
+            let entries = {};
+            for (var [name, childNode] of this._value.entries()) {
+                entries[name] = childNode.toString();
+            }
+            return JSON.stringify(entries, null, 2);
+        } else if (this._datatype != 'object') {
+            // return JSON.stringify(this._value);
+            return this._value;
+        } else {
+            // don't serialize native objects!
+            return null;
+        }
+    }
+
+    /**
+     * Returns a pure object representation of the node.
+     * @function
+     * @name Node.toObject
+     * @param {number} recursion_limit - The recursion limit. If negative there is no recursion limit.
+     * @return {object}
+     */
+    toObject(recursion_limit = -1) {
+        if (this.isContainer) {
+            let entries = {};
+            for (var [name, childNode] of this._value.entries()) {
+                if (recursion_limit &lt; 0) {
+                    entries[name] = childNode.toObject(recursion_limit);
+                } else if (recursion_limit > 0) {
+                    entries[name] = childNode.toObject(recursion_limit - 1);
+                }
+            }
+            return entries;
+        } else if (this._datatype != 'object') {
+            return this._value;
+        } else {
+            // don't serialize native objects!
+            return null;
+        }
+    }
+
+    /**
+     * Returns a JSON representation.
+     * @function
+     * @name Node.toJson
+     * @param {number} recursion_limit - The recursion limit. If negative there is no recursion limit.
+     * @return {string}
+     */
+    toJson(recursion_limit = -1) {
+        return JSON.stringify(this.toObject(recursion_limit), null, 2);
+    }
+
+    /**
+     * Returns a flat representation of the sub tree.
+     * @param {number} depth - depth.
+     * @return {object}
+     */
+    getFlatRepresentation(depth = 0) {
+        var entries = {};
+        let childNames = this.getChildNames();
+        for (let i = 0; i &lt; childNames.length; i++) {
+            let childNode = this.getChild(childNames[i]);
+            if (childNode.isContainer) {
+                entries[childNode._path] = {
+                    dataType: childNode._datatype,
+                    value: null
+                };
+            } else {
+                entries[childNode._path] = {
+                    dataType: childNode._datatype,
+                    value: childNode._value
+                };
+            }
+        }
+        if (depth > 0) {
+            for (let i = 0; i &lt; childNames.length; i++) {
+                let childNode = this.getChild(childNames[i]);
+                if (childNode.isContainer) {
+                    entries = Object.assign(entries, childNode.getFlatRepresentationOfNode(depth - 1));
+                }
+            }
+        }
+        return entries;
+    }
+
+    /**
+     * Iterates over the node and child nodes
+     * @function
+     * @return {Node}
+     */
+    [Symbol.iterator]() {
+        // Hacky slashy
+        let self = this;
+        let position = 0;
+        let children = this.getChildNames();
+
+        return {
+            next: function () {
+                if (position &lt; children.length) {
+                    position++;
+                    return {value: self.getChild(children[position - 1]), done: false};
+                } else {
+                    return {done: true};
+                }
+            },
+            // Return a well formated iterator
+            [Symbol.iterator]: function () {
+                return this;
+            }
+        }
+    }
+
+    /**
+     * NOTE:
+     * For compete traversal one should use iterator with children
+     * for (child of node) {
+     *  if (child.hasChildren) {
+     *    for (children of child) {
+     *      // Do this for as much recursion levels as you like
+     *    }
+     *  }
+     * }
+     */
+
+}
+
+module.exports = Node;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Oct 22 2017 19:42:12 GMT+0000 (UTC) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

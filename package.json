@@ -1,0 +1,83 @@
+{
+  "name": "@inexorgame/inexor-flex",
+  "version": "0.9.0-preview17",
+  "description": "Scripting environment for Inexor.",
+  "scripts": {
+    "prestart": "npm up -g",
+    "start": "node server/index.js --profile  $npm_package_config_profile",
+    "stop": "./inexor flex shutdown",
+    "restart": "./inexor flex restart",
+    "test": "mocha \"src/*/test/*.js\" \"server/test/*.js\" \"server/*/*/test/*.js\" --harmony",
+    "docs": "jsdoc -c .jsdoc.json",
+    "lint": "eslint .",
+    "dev": "node server/index.js --profile=devenv",
+    "server": "node server/index.js --profile=server",
+    "shell": "node inexor.js shell"
+  },
+  "bin": {
+    "inexor-flex": "inexor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inexorgame/inexor-flex.git"
+  },
+  "keywords": [
+    "inexor",
+    "gaming"
+  ],
+  "author": "The Inexor Team",
+  "license": "Zlib",
+  "bugs": {
+    "url": "https://github.com/inexorgame/inexor-core/issues"
+  },
+  "homepage": "https://github.com/inexorgame/inexor-flex#readme",
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "dependencies": {
+    "@inexorgame/api": "^1.0.1",
+    "@inexorgame/console": "^1.0.1",
+    "@inexorgame/context": "^1.0.1",
+    "@inexorgame/entities": "^1.0.1",
+    "@inexorgame/gameclient": "^1.0.1",
+    "@inexorgame/gameserver": "^1.0.1",
+    "@inexorgame/instances": "^1.0.1",
+    "@inexorgame/interfaces": "^1.0.1",
+    "@inexorgame/logger": "^1.0.1",
+    "@inexorgame/logging": "^1.0.1",
+    "@inexorgame/media": "^1.0.1",
+    "@inexorgame/path": "^1.0.1",
+    "@inexorgame/profiles": "^1.0.1",
+    "@inexorgame/releases": "^1.0.1",
+    "@inexorgame/tree": "^1.0.3",
+    "@inexorgame/treeclient": "^1.0.1",
+    "@inexorgame/types": "^1.0.1  ",
+    "circular-json": "^0.3.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "express-ws": "^3.0.0",
+    "figlet": "^1.2.0",
+    "npid": "^0.4.0",
+    "portscanner": "^2.1.1",
+    "prettyjson": "^1.2.1",
+    "toml": "^2.3.2",
+    "tomlify": "^0.2.0",
+    "wait-on": "^2.0.2",
+    "xdg-basedir": "^3.0.0",
+    "yargs": "^7.0.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chai-iterator": "^1.1.4",
+    "eslint": "^3.19.0",
+    "jsdoc": "^3.4.3",
+    "lerna": "^2.4.0",
+    "minami": "^1.1.1",
+    "mocha": "^3.2.0",
+    "mocha-junit-reporter": "^1.13.0"
+  },
+  "config": {
+    "profile": "client"
+  }
+}
