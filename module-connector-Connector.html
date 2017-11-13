@@ -2,37 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Connector - Documentation</title>
+    <title>Class: Connector | Inexor Flex</title>
 
-    <script src="scripts/prettify/prettify.js"></script>
-    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-jsdoc.css">
     <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
-    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/tui-doc.css">
+
+    
 </head>
 <body>
-
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger" class="navicon-button x">
-  <div class="navicon"></div>
-</label>
-
-<label for="nav-trigger" class="overlay"></label>
-
-<nav>
-    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ConsoleWsAPI.html">ConsoleWsAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ConsoleWsAPI.html#handleRequest">handleRequest</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ConsoleWsAPI.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html">FilesystemRepositoryManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.addRepository">addRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.createRepository">createRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.get_sub_directories">get_sub_directories</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.scan">scan</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#.scanAll">scanAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FilesystemRepositoryManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="FlexArgs.html">FlexArgs</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="FlexRestAPI.html">FlexRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FlexRestAPI.html#getSysInfo">getSysInfo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FlexRestAPI.html#shutdown">shutdown</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="FlexRestAPI.html#version">version</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="GitRepositoryManager.html">GitRepositoryManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.addRepository">addRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.checkoutBranch">checkoutBranch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.createRepository">createRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.get_sub_directories">get_sub_directories</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.getBranches">getBranches</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.getCurrentBranch">getCurrentBranch</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.isGitRepository">isGitRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.mergeBranches">mergeBranches</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.mergeBranches">mergeBranches</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.scan">scan</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.scanAll">scanAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#.update">update</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="GitRepositoryManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html">InexorTreeRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#convert">convert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#dumpInstanceTree">dumpInstanceTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#dumpRootTree">dumpRootTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#dumpSubTree">dumpSubTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#getInstanceNode">getInstanceNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#getRootNode">getRootNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#setInstanceNode">setInstanceNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeRestAPI.html#setRootNode">setRootNode</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html">InexorTreeWsAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html#addNode">addNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html#convert">convert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html#handleRequest">handleRequest</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InexorTreeWsAPI.html#syncNode">syncNode</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="InstancesRestAPI.html">InstancesRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#connectToInstance">connectToInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#createInstance">createInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#disconnectFromInstance">disconnectFromInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#getInstance">getInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#listInstances">listInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#removeInstance">removeInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#startAllInstances">startAllInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#startInstance">startInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#stopAllInstances">stopAllInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#stopInstance">stopInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="InstancesRestAPI.html#synchronizeWithInstance">synchronizeWithInstance</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="MediaManager.html">MediaManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaManager.html#addMedia">addMedia</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="MediaRepositoryManager.html">MediaRepositoryManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.getRepositoriesNode">getRepositoriesNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.getRepositoryNames">getRepositoryNames</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.getRepositoryPath">getRepositoryPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.getRepositoryPaths">getRepositoryPaths</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.getType">getType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.remove">remove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.scanAll">scanAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.scanAll">scanAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#.update">update</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html">MediaRepositoryRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html#createMediaRepository">createMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html#removeMediaRepository">removeMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html#scanMediaRepositories">scanMediaRepositories</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html#updateMediaRepository">updateMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="MediaRepositoryRestAPI.html#updateMediaRepositoryBranch">updateMediaRepositoryBranch</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-connector-Connector.html">Connector</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#addSynchronizeListener">addSynchronizeListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#addTreeNodeSyncListenersFromDefaults">addTreeNodeSyncListenersFromDefaults</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#closeGrpcConnection">closeGrpcConnection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#convert">convert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getDataType">getDataType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getDefaultValue">getDefaultValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getEventType">getEventType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getId">getId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getLoggerName">getLoggerName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getMessage">getMessage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#getPath">getPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#linkTreeMounts">linkTreeMounts</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#loadInstanceConfiguration">loadInstanceConfiguration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#onNewTreeNode">onNewTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#onTreeNodeSync">onTreeNodeSync</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#populateInstanceTreeFromDefaults">populateInstanceTreeFromDefaults</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#removeGrpcListeners">removeGrpcListeners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#removeListeners">removeListeners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#removeTreeListeners">removeTreeListeners</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#sendFinishedTreeIntro">sendFinishedTreeIntro</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-connector-Connector.html#updateTree">updateTree</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-console-CommandManager.html">CommandManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-CommandManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-CommandManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html">ConsoleManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#createConsole">createConsole</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#getBuffer">getBuffer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#getInstanceLogger">getInstanceLogger</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#mapStreamToLog">mapStreamToLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-console-ConsoleManager.html#writeBuffer">writeBuffer</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-Entity.html">Entity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#addChild">addChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#addParent">addParent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#destroy">destroy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getChildEntities">getChildEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getIncomingRelationships">getIncomingRelationships</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getOutgoingRelationships">getOutgoingRelationships</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getParentEntities">getParentEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getType">getType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#getUuid">getUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#isChildEntity">isChildEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#isParentEntity">isParentEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#removeChildEntity">removeChildEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Entity.html#removeParentEntity">removeParentEntity</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-EntityManager.html">EntityManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityManager.html#getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityManager.html#getByUuid">getByUuid</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-EntitySystem.html">EntitySystem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntitySystem.html#getEntityManager">getEntityManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntitySystem.html#getEntityTypeManager">getEntityTypeManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntitySystem.html#getRelationshipManager">getRelationshipManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntitySystem.html#getRelationshipTypeManager">getRelationshipTypeManager</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-EntityType.html">EntityType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#getEntities">getEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#getName">getName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#getUuid">getUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#isEntityOfType">isEntityOfType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#isEntityRegistered">isEntityRegistered</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#register">register</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityType.html#unregister">unregister</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-EntityTypeManager.html">EntityTypeManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityTypeManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityTypeManager.html#getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityTypeManager.html#getByUuid">getByUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-EntityTypeManager.html#remove">remove</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-Relationship.html">Relationship</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Relationship.html#disconnect">disconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Relationship.html#getEndEntity">getEndEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Relationship.html#getStartEntity">getStartEntity</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Relationship.html#getType">getType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-Relationship.html#getUuid">getUuid</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-RelationshipManager.html">RelationshipManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipManager.html#getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipManager.html#getByUuid">getByUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipManager.html#remove">remove</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html">RelationshipType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#getName">getName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#getUuid">getUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#isRelationshipOfType">isRelationshipOfType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#isRelationshipRegistered">isRelationshipRegistered</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#register">register</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipType.html#unregister">unregister</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html">RelationshipTypesManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html#getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html#getByName">getByName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html#getByUuid">getByUuid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-entities-RelationshipTypesManager.html#remove">remove</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-gameclient-ScreenManager.html">ScreenManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameclient-ScreenManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameclient-ScreenManager.html#onInstanceConnected">onInstanceConnected</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameclient-ScreenManager.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-gameserver-IntermissionService.html">IntermissionService</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-IntermissionService.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-IntermissionService.html#onInstanceConnected">onInstanceConnected</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-IntermissionService.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html">MapRotationService</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html#getRandomMap">getRandomMap</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html#onIntermission">onIntermission</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-gameserver-MapRotationService.html#setMap">setMap</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html">InstanceManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#disconnect">disconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getCurrentProfile">getCurrentProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getHostname">getHostname</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getInstancesByState">getInstancesByState</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getInstancesByType">getInstancesByType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getPort">getPort</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#getTransition">getTransition</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#isValidInstanceType">isValidInstanceType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#killProcess">killProcess</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#loadInstances">loadInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#pause">pause</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#remove">remove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#resume">resume</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#saveInstances">saveInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#shutdownProcess">shutdownProcess</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#start">start</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#startAll">startAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#stop">stop</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#stopAll">stopAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-instances-InstanceManager.html#transist">transist</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html">LayerManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#createLayer">createLayer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#hideLayer">hideLayer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#reloadLayer">reloadLayer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#removeLayer">removeLayer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#setAcceptingKeyInput">setAcceptingKeyInput</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#setAcceptingMouseInput">setAcceptingMouseInput</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#setLayerUrl">setLayerUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-interfaces-LayerManager.html#showLayer">showLayer</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-logging-LogManager.html">LogManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#createLogger">createLogger</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#getLogger">getLogger</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#loadLogConfiguration">loadLogConfiguration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-logging-LogManager.html#setLoglevel">setLoglevel</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-media-MapManager.html">MapManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#convert">convert</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#createConfigTree">createConfigTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#findMapFiles">findMapFiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#getMapNames">getMapNames</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#loadMapConfiguration">loadMapConfiguration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-MapManager.html#updateMaps">updateMaps</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-media-TextureManager.html">TextureManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-TextureManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-TextureManager.html#findTextureFilesByTypes">findTextureFilesByTypes</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-TextureManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-media-TextureManager.html#updateTextures">updateTextures</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html">ProfileManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#create">create</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#exists">exists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getAllProfiles">getAllProfiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getConfigPath">getConfigPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getCurrentProfile">getCurrentProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getCurrentProfileName">getCurrentProfileName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getDefaultProfile">getDefaultProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getDefaultProfileName">getDefaultProfileName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getProfile">getProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#getProfilesConfigPath">getProfilesConfigPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#loadProfiles">loadProfiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#remove">remove</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#saveProfiles">saveProfiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#setCurrentProfile">setCurrentProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-profiles-ProfileManager.html#switchTo">switchTo</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Node.html">Node</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.addChild">addChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.addLink">addLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.addNode">addNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.firstChild">firstChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.get">get</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getChild">getChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getChildNames">getChildNames</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getName">getName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getOrCreateNode">getOrCreateNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getParent">getParent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getPath">getPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.getRoot">getRoot</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.hasChild">hasChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.hasChildren">hasChildren</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.isChildOf">isChildOf</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.removeAllChildren">removeAllChildren</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.removeChild">removeChild</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.set">set</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.size">size</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.toJson">toJson</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.toObject">toObject</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#.toString">toString</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Node.html#getFlatRepresentation">getFlatRepresentation</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="PidManager.html">PidManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="PidManager.html#createPid">createPid</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ProcessManager.html">ProcessManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#createProcessHandlers">createProcessHandlers</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#onExit">onExit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#onReloadSignal">onReloadSignal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#onSegfault">onSegfault</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#onShutdownSignal">onShutdownSignal</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProcessManager.html#onUncaughtException">onUncaughtException</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ProfilesRestAPI.html">ProfilesRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProfilesRestAPI.html#createProfile">createProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProfilesRestAPI.html#dumpProfilesTree">dumpProfilesTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProfilesRestAPI.html#listProfiles">listProfiles</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProfilesRestAPI.html#removeProfile">removeProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ProfilesRestAPI.html#switchToProfile">switchToProfile</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ReleaseManager.html">ReleaseManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#checkForNewReleases">checkForNewReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#determinePlatform">determinePlatform</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#downloadRelease">downloadRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#getBinaryPath">getBinaryPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#getConfigPath">getConfigPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#getExecutableName">getExecutableName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#getOrInstallRelease">getOrInstallRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#getRelease">getRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#getVersionStrFromZipName">getVersionStrFromZipName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#installRelease">installRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#loadConfig">loadConfig</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#makeZipNameFromVersion">makeZipNameFromVersion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#mkdirLocalCache">mkdirLocalCache</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#saveConfig">saveConfig</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleaseManager.html#uninstallRelease">uninstallRelease</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="ReleasesRestAPI.html">ReleasesRestAPI</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleasesRestAPI.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleasesRestAPI.html#fetchReleases">fetchReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleasesRestAPI.html#getReleaseInfo">getReleaseInfo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleasesRestAPI.html#listReleases">listReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="ReleasesRestAPI.html#setDependencies">setDependencies</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Root.html">Root</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Root.html#.createRecursive">createRecursive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Root.html#.findNode">findNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Root.html#contains">contains</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="TreeClient.html">TreeClient</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#branchMediaRepository">branchMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#callEndpoint">callEndpoint</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#clientWindowFullscreen">clientWindowFullscreen</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#clientWindowMaximize">clientWindowMaximize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#clientWindowMinimize">clientWindowMinimize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#clientWindowRestore">clientWindowRestore</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#connectInstance">connectInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#createEndpoint">createEndpoint</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#createInstance">createInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#createMediaRepository">createMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#createProfile">createProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#deleteTreeNode">deleteTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#downloadRelease">downloadRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#dumpInstanceTree">dumpInstanceTree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#fetchReleases">fetchReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getAllInstances">getAllInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getEndpointUrl">getEndpointUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getFlexLog">getFlexLog</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getFlexSysInfo">getFlexSysInfo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getFlexVersion">getFlexVersion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getInstance">getInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getReleaseInfo">getReleaseInfo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#getTreeNode">getTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#installRelease">installRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#listReleases">listReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#loadReleases">loadReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#readHJsonConfig">readHJsonConfig</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#readTOMLConfig">readTOMLConfig</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#removeInstance">removeInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#removeMediaRepository">removeMediaRepository</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#removeProfile">removeProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#saveReleases">saveReleases</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#scanMediaRepositories">scanMediaRepositories</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#setTreeNode">setTreeNode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#shutdownFlex">shutdownFlex</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#startAllInstances">startAllInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#startInstance">startInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#stopAllInstances">stopAllInstances</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#stopInstance">stopInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#switchProfile">switchProfile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#synchronizeInstance">synchronizeInstance</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#uninstallRelease">uninstallRelease</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="TreeClient.html#updateMediaRepository">updateMediaRepository</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html">WebUserInterfaceManager</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#afterPropertiesSet">afterPropertiesSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#createInterface">createInterface</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#disableInterface">disableInterface</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#enableInterface">enableInterface</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getAbsoluteFsPath">getAbsoluteFsPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getFullUrl">getFullUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getInterfaceNames">getInterfaceNames</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getPath">getPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getRelativeFsPath">getRelativeFsPath</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#getRelativeUrl">getRelativeUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#interfaceExists">interfaceExists</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#loadInterfaces">loadInterfaces</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#removeInterface">removeInterface</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#scanForInterfaces">scanForInterfaces</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#setDependencies">setDependencies</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#updateInterface">updateInterface</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="WebUserInterfaceManager.html#updateInterfaceNode">updateInterfaceNode</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-api.html">api</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-connector.html">connector</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-console.html">console</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-context.html">context</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-entities.html">entities</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-gameclient.html">gameclient</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-gameserver.html">gameserver</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-instances.html">instances</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-interfaces.html">interfaces</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-logging.html">logging</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-media.html">media</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-path.html">path</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-path.html#~getXdgLocationFromEnvironmentVariable">getXdgLocationFromEnvironmentVariable</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-profiles.html">profiles</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-releases.html">releases</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-tree.html">tree</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-treeclient.html">treeclient</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-types.html">types</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-types.html#~getDataType">getDataType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-types.html#~isInt">isInt</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="path%250A__%2520TODO_%2520Might%2520be%2520better%2520called%2520inexorgame_defaultsmodule_.html">path
-// TODO: Might be better called inexorgame/defaults</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~getConfigPaths">getConfigPaths</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~getMediaPaths">getMediaPaths</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#isValidDataType">isValidDataType</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#media_types">media_types</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#repository_types">repository_types</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#separator">separator</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#validName">validName</a></span></li>
+<nav class="lnb" id="lnb">
+    <div class="logo" style="width: 120   px; height: 80px">
+        
+            <img src="https://raw.githubusercontent.com/inexorgame/artwork/master/logo/logo_rendered.png" width="100%" height="100%">
+        
+    </div>
+    <div class="title">
+        <h1><a href="index.html" class="link">Inexor Flex</a></h1>
+        
+    </div>
+    <div class="search-container" id="search-container">
+        <input type="text" placeholder="Search">
+        <ul></ul>
+    </div>
+    
+    <div class="lnb-api hidden"><h3>Modules</h3><ul><li><a href="module-api.html">api</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:api_sub"></div></li><li><a href="module-connector.html">connector</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:connector_sub"></div></li><li><a href="module-console.html">console</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:console_sub"></div></li><li><a href="module-context.html">context</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:context_sub"></div></li><li><a href="module-entities.html">entities</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:entities_sub"></div></li><li><a href="module-gameclient.html">gameclient</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:gameclient_sub"></div></li><li><a href="module-gameserver.html">gameserver</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:gameserver_sub"></div></li><li><a href="module-instances.html">instances</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:instances_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="module-instances.html#~default_instance_ports">default_instance_ports</a></li><li><a href="module-instances.html#~default_instance_state">default_instance_state</a></li><li><a href="module-instances.html#~default_instance_type">default_instance_type</a></li><li><a href="module-instances.html#~instance_states">instance_states</a></li><li><a href="module-instances.html#~instance_transitions">instance_transitions</a></li><li><a href="module-instances.html#~instance_types">instance_types</a></li></ul></div></li><li><a href="module-interfaces.html">interfaces</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:interfaces_sub"></div></li><li><a href="module-logging.html">logging</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:logging_sub"></div></li><li><a href="module-media.html">media</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:media_sub"></div></li><li><a href="module-path.html">path</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:path_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-path.html#~getXdgLocationFromEnvironmentVariable">getXdgLocationFromEnvironmentVariable</a></li></ul></div></li><li><a href="module-profiles.html">profiles</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:profiles_sub"></div></li><li><a href="module-releases.html">releases</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:releases_sub"></div></li><li><a href="module-tree.html">tree</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:tree_sub"></div></li><li><a href="module-treeclient.html">treeclient</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:treeclient_sub"></div></li><li><a href="module-types.html">types</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:types_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-types.html#~getDataType">getDataType</a></li><li><a href="module-types.html#~isInt">isInt</a></li></ul></div></li><li><a href="path%250A__%2520TODO_%2520Might%2520be%2520better%2520called%2520inexorgame_defaultsmodule_.html">path
+// TODO: Might be better called inexorgame/defaults</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="path
+// TODO: Might be better called inexorgame/defaultsmodule:_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~config_path">config_path</a></li><li><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~DEFAULT_PORT">DEFAULT_PORT</a></li><li><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~flex_path">flex_path</a></li><li><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~interfaces_path">interfaces_path</a></li><li><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~media_path">media_path</a></li><li><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~pid_path">pid_path</a></li><li><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~releases_path">releases_path</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~getConfigPaths">getConfigPaths</a></li><li><a href="path%25250A__%252520TODO_%252520Might%252520be%252520better%252520called%252520inexorgame_defaultsmodule_.html#~getMediaPaths">getMediaPaths</a></li></ul></div></li></ul></div><div class="lnb-api hidden"><h3>Classes</h3><ul><li><a href="ConsoleWsAPI.html">ConsoleWsAPI</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="ConsoleWsAPI_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="ConsoleWsAPI.html#handleRequest">handleRequest</a></li><li><a href="ConsoleWsAPI.html#setDependencies">setDependencies</a></li></ul></div></li><li><a href="FilesystemRepositoryManager.html">FilesystemRepositoryManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="FilesystemRepositoryManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="FilesystemRepositoryManager.html#.addRepository">addRepository</a></li><li><a href="FilesystemRepositoryManager.html#.createRepository">createRepository</a></li><li><a href="FilesystemRepositoryManager.html#.exists">exists</a></li><li><a href="FilesystemRepositoryManager.html#.get_sub_directories">get_sub_directories</a></li><li><a href="FilesystemRepositoryManager.html#.scan">scan</a></li><li><a href="FilesystemRepositoryManager.html#.scanAll">scanAll</a></li><li><a href="FilesystemRepositoryManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="FilesystemRepositoryManager.html#setDependencies">setDependencies</a></li></ul></div></li><li><a href="FlexArgs.html">FlexArgs</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="FlexArgs_sub"></div></li><li><a href="FlexRestAPI.html">FlexRestAPI</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="FlexRestAPI_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="FlexRestAPI.html#getSysInfo">getSysInfo</a></li><li><a href="FlexRestAPI.html#shutdown">shutdown</a></li><li><a href="FlexRestAPI.html#version">version</a></li></ul></div></li><li><a href="GitRepositoryManager.html">GitRepositoryManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="GitRepositoryManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="GitRepositoryManager.html#.addRepository">addRepository</a></li><li><a href="GitRepositoryManager.html#.checkoutBranch">checkoutBranch</a></li><li><a href="GitRepositoryManager.html#.createRepository">createRepository</a></li><li><a href="GitRepositoryManager.html#.exists">exists</a></li><li><a href="GitRepositoryManager.html#.get_sub_directories">get_sub_directories</a></li><li><a href="GitRepositoryManager.html#.getBranches">getBranches</a></li><li><a href="GitRepositoryManager.html#.getCurrentBranch">getCurrentBranch</a></li><li><a href="GitRepositoryManager.html#.isGitRepository">isGitRepository</a></li><li><a href="GitRepositoryManager.html#.mergeBranches">mergeBranches</a></li><li><a href="GitRepositoryManager.html#.mergeBranches">mergeBranches</a></li><li><a href="GitRepositoryManager.html#.scan">scan</a></li><li><a href="GitRepositoryManager.html#.scanAll">scanAll</a></li><li><a href="GitRepositoryManager.html#.update">update</a></li><li><a href="GitRepositoryManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="GitRepositoryManager.html#setDependencies">setDependencies</a></li></ul></div></li><li><a href="InexorTreeRestAPI.html">InexorTreeRestAPI</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="InexorTreeRestAPI_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="InexorTreeRestAPI.html#convert">convert</a></li><li><a href="InexorTreeRestAPI.html#dumpInstanceTree">dumpInstanceTree</a></li><li><a href="InexorTreeRestAPI.html#dumpRootTree">dumpRootTree</a></li><li><a href="InexorTreeRestAPI.html#dumpSubTree">dumpSubTree</a></li><li><a href="InexorTreeRestAPI.html#getInstanceNode">getInstanceNode</a></li><li><a href="InexorTreeRestAPI.html#getRootNode">getRootNode</a></li><li><a href="InexorTreeRestAPI.html#setInstanceNode">setInstanceNode</a></li><li><a href="InexorTreeRestAPI.html#setRootNode">setRootNode</a></li></ul></div></li><li><a href="InexorTreeWsAPI.html">InexorTreeWsAPI</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="InexorTreeWsAPI_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="InexorTreeWsAPI.html#addNode">addNode</a></li><li><a href="InexorTreeWsAPI.html#convert">convert</a></li><li><a href="InexorTreeWsAPI.html#handleRequest">handleRequest</a></li><li><a href="InexorTreeWsAPI.html#setDependencies">setDependencies</a></li><li><a href="InexorTreeWsAPI.html#syncNode">syncNode</a></li></ul></div></li><li><a href="InstancesRestAPI.html">InstancesRestAPI</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="InstancesRestAPI_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="InstancesRestAPI.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="InstancesRestAPI.html#connectToInstance">connectToInstance</a></li><li><a href="InstancesRestAPI.html#createInstance">createInstance</a></li><li><a href="InstancesRestAPI.html#disconnectFromInstance">disconnectFromInstance</a></li><li><a href="InstancesRestAPI.html#getInstance">getInstance</a></li><li><a href="InstancesRestAPI.html#listInstances">listInstances</a></li><li><a href="InstancesRestAPI.html#removeInstance">removeInstance</a></li><li><a href="InstancesRestAPI.html#setDependencies">setDependencies</a></li><li><a href="InstancesRestAPI.html#startAllInstances">startAllInstances</a></li><li><a href="InstancesRestAPI.html#startInstance">startInstance</a></li><li><a href="InstancesRestAPI.html#stopAllInstances">stopAllInstances</a></li><li><a href="InstancesRestAPI.html#stopInstance">stopInstance</a></li><li><a href="InstancesRestAPI.html#synchronizeWithInstance">synchronizeWithInstance</a></li></ul></div></li><li><a href="MediaManager.html">MediaManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="MediaManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="MediaManager.html#addMedia">addMedia</a></li><li><a href="MediaManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="MediaManager.html#setDependencies">setDependencies</a></li></ul></div></li><li><a href="MediaRepositoryManager.html">MediaRepositoryManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="MediaRepositoryManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="MediaRepositoryManager.html#.exists">exists</a></li><li><a href="MediaRepositoryManager.html#.getRepositoriesNode">getRepositoriesNode</a></li><li><a href="MediaRepositoryManager.html#.getRepositoryNames">getRepositoryNames</a></li><li><a href="MediaRepositoryManager.html#.getRepositoryPath">getRepositoryPath</a></li><li><a href="MediaRepositoryManager.html#.getRepositoryPaths">getRepositoryPaths</a></li><li><a href="MediaRepositoryManager.html#.getType">getType</a></li><li><a href="MediaRepositoryManager.html#.remove">remove</a></li><li><a href="MediaRepositoryManager.html#.scanAll">scanAll</a></li><li><a href="MediaRepositoryManager.html#.scanAll">scanAll</a></li><li><a href="MediaRepositoryManager.html#.update">update</a></li><li><a href="MediaRepositoryManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="MediaRepositoryManager.html#setDependencies">setDependencies</a></li></ul></div></li><li><a href="MediaRepositoryRestAPI.html">MediaRepositoryRestAPI</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="MediaRepositoryRestAPI_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="MediaRepositoryRestAPI.html#createMediaRepository">createMediaRepository</a></li><li><a href="MediaRepositoryRestAPI.html#removeMediaRepository">removeMediaRepository</a></li><li><a href="MediaRepositoryRestAPI.html#scanMediaRepositories">scanMediaRepositories</a></li><li><a href="MediaRepositoryRestAPI.html#updateMediaRepository">updateMediaRepository</a></li><li><a href="MediaRepositoryRestAPI.html#updateMediaRepositoryBranch">updateMediaRepositoryBranch</a></li></ul></div></li><li><a href="module-connector-Connector.html">Connector</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:connector~Connector_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="module-connector-Connector.html#protoDescriptor">protoDescriptor</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="module-connector-Connector.html#addSynchronizeListener">addSynchronizeListener</a></li><li><a href="module-connector-Connector.html#addTreeNodeSyncListenersFromDefaults">addTreeNodeSyncListenersFromDefaults</a></li><li><a href="module-connector-Connector.html#closeGrpcConnection">closeGrpcConnection</a></li><li><a href="module-connector-Connector.html#connect">connect</a></li><li><a href="module-connector-Connector.html#convert">convert</a></li><li><a href="module-connector-Connector.html#getDataType">getDataType</a></li><li><a href="module-connector-Connector.html#getDefaultValue">getDefaultValue</a></li><li><a href="module-connector-Connector.html#getEventType">getEventType</a></li><li><a href="module-connector-Connector.html#getId">getId</a></li><li><a href="module-connector-Connector.html#getLoggerName">getLoggerName</a></li><li><a href="module-connector-Connector.html#getMessage">getMessage</a></li><li><a href="module-connector-Connector.html#getPath">getPath</a></li><li><a href="module-connector-Connector.html#linkTreeMounts">linkTreeMounts</a></li><li><a href="module-connector-Connector.html#loadInstanceConfiguration">loadInstanceConfiguration</a></li><li><a href="module-connector-Connector.html#onNewTreeNode">onNewTreeNode</a></li><li><a href="module-connector-Connector.html#onTreeNodeSync">onTreeNodeSync</a></li><li><a href="module-connector-Connector.html#populateInstanceTreeFromDefaults">populateInstanceTreeFromDefaults</a></li><li><a href="module-connector-Connector.html#removeGrpcListeners">removeGrpcListeners</a></li><li><a href="module-connector-Connector.html#removeListeners">removeListeners</a></li><li><a href="module-connector-Connector.html#removeTreeListeners">removeTreeListeners</a></li><li><a href="module-connector-Connector.html#sendFinishedTreeIntro">sendFinishedTreeIntro</a></li><li><a href="module-connector-Connector.html#updateTree">updateTree</a></li></ul></div></li><li><a href="module-console-CommandManager.html">CommandManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:console~CommandManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-console-CommandManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-console-CommandManager.html#setDependencies">setDependencies</a></li></ul></div></li><li><a href="module-console-ConsoleManager.html">ConsoleManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:console~ConsoleManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-console-ConsoleManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-console-ConsoleManager.html#createConsole">createConsole</a></li><li><a href="module-console-ConsoleManager.html#getBuffer">getBuffer</a></li><li><a href="module-console-ConsoleManager.html#getInstanceLogger">getInstanceLogger</a></li><li><a href="module-console-ConsoleManager.html#mapStreamToLog">mapStreamToLog</a></li><li><a href="module-console-ConsoleManager.html#setDependencies">setDependencies</a></li><li><a href="module-console-ConsoleManager.html#writeBuffer">writeBuffer</a></li></ul></div></li><li><a href="module-entities-Entity.html">Entity</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:entities~Entity_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-entities-Entity.html#addChild">addChild</a></li><li><a href="module-entities-Entity.html#addParent">addParent</a></li><li><a href="module-entities-Entity.html#destroy">destroy</a></li><li><a href="module-entities-Entity.html#getChildEntities">getChildEntities</a></li><li><a href="module-entities-Entity.html#getIncomingRelationships">getIncomingRelationships</a></li><li><a href="module-entities-Entity.html#getOutgoingRelationships">getOutgoingRelationships</a></li><li><a href="module-entities-Entity.html#getParentEntities">getParentEntities</a></li><li><a href="module-entities-Entity.html#getType">getType</a></li><li><a href="module-entities-Entity.html#getUuid">getUuid</a></li><li><a href="module-entities-Entity.html#isChildEntity">isChildEntity</a></li><li><a href="module-entities-Entity.html#isParentEntity">isParentEntity</a></li><li><a href="module-entities-Entity.html#removeChildEntity">removeChildEntity</a></li><li><a href="module-entities-Entity.html#removeParentEntity">removeParentEntity</a></li></ul></div></li><li><a href="module-entities-EntityManager.html">EntityManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:entities~EntityManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-entities-EntityManager.html#create">create</a></li><li><a href="module-entities-EntityManager.html#getAll">getAll</a></li><li><a href="module-entities-EntityManager.html#getByUuid">getByUuid</a></li></ul></div></li><li><a href="module-entities-EntitySystem.html">EntitySystem</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:entities~EntitySystem_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-entities-EntitySystem.html#getEntityManager">getEntityManager</a></li><li><a href="module-entities-EntitySystem.html#getEntityTypeManager">getEntityTypeManager</a></li><li><a href="module-entities-EntitySystem.html#getRelationshipManager">getRelationshipManager</a></li><li><a href="module-entities-EntitySystem.html#getRelationshipTypeManager">getRelationshipTypeManager</a></li></ul></div></li><li><a href="module-entities-EntityType.html">EntityType</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:entities~EntityType_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-entities-EntityType.html#getEntities">getEntities</a></li><li><a href="module-entities-EntityType.html#getName">getName</a></li><li><a href="module-entities-EntityType.html#getUuid">getUuid</a></li><li><a href="module-entities-EntityType.html#isEntityOfType">isEntityOfType</a></li><li><a href="module-entities-EntityType.html#isEntityRegistered">isEntityRegistered</a></li><li><a href="module-entities-EntityType.html#register">register</a></li><li><a href="module-entities-EntityType.html#unregister">unregister</a></li></ul></div></li><li><a href="module-entities-EntityTypeManager.html">EntityTypeManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:entities~EntityTypeManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-entities-EntityTypeManager.html#create">create</a></li><li><a href="module-entities-EntityTypeManager.html#getAll">getAll</a></li><li><a href="module-entities-EntityTypeManager.html#getByUuid">getByUuid</a></li><li><a href="module-entities-EntityTypeManager.html#remove">remove</a></li></ul></div></li><li><a href="module-entities-Relationship.html">Relationship</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:entities~Relationship_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-entities-Relationship.html#disconnect">disconnect</a></li><li><a href="module-entities-Relationship.html#getEndEntity">getEndEntity</a></li><li><a href="module-entities-Relationship.html#getStartEntity">getStartEntity</a></li><li><a href="module-entities-Relationship.html#getType">getType</a></li><li><a href="module-entities-Relationship.html#getUuid">getUuid</a></li></ul></div></li><li><a href="module-entities-RelationshipManager.html">RelationshipManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:entities~RelationshipManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-entities-RelationshipManager.html#create">create</a></li><li><a href="module-entities-RelationshipManager.html#getAll">getAll</a></li><li><a href="module-entities-RelationshipManager.html#getByUuid">getByUuid</a></li><li><a href="module-entities-RelationshipManager.html#remove">remove</a></li></ul></div></li><li><a href="module-entities-RelationshipType.html">RelationshipType</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:entities~RelationshipType_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-entities-RelationshipType.html#getName">getName</a></li><li><a href="module-entities-RelationshipType.html#getUuid">getUuid</a></li><li><a href="module-entities-RelationshipType.html#isRelationshipOfType">isRelationshipOfType</a></li><li><a href="module-entities-RelationshipType.html#isRelationshipRegistered">isRelationshipRegistered</a></li><li><a href="module-entities-RelationshipType.html#register">register</a></li><li><a href="module-entities-RelationshipType.html#unregister">unregister</a></li></ul></div></li><li><a href="module-entities-RelationshipTypesManager.html">RelationshipTypesManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:entities~RelationshipTypesManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-entities-RelationshipTypesManager.html#create">create</a></li><li><a href="module-entities-RelationshipTypesManager.html#getAll">getAll</a></li><li><a href="module-entities-RelationshipTypesManager.html#getByName">getByName</a></li><li><a href="module-entities-RelationshipTypesManager.html#getByUuid">getByUuid</a></li><li><a href="module-entities-RelationshipTypesManager.html#remove">remove</a></li></ul></div></li><li><a href="module-gameclient-ScreenManager.html">ScreenManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:gameclient~ScreenManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-gameclient-ScreenManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-gameclient-ScreenManager.html#onInstanceConnected">onInstanceConnected</a></li><li><a href="module-gameclient-ScreenManager.html#setDependencies">setDependencies</a></li></ul></div></li><li><a href="module-gameserver-IntermissionService.html">IntermissionService</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:gameserver~IntermissionService_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-gameserver-IntermissionService.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-gameserver-IntermissionService.html#onInstanceConnected">onInstanceConnected</a></li><li><a href="module-gameserver-IntermissionService.html#setDependencies">setDependencies</a></li></ul></div></li><li><a href="module-gameserver-MapRotationService.html">MapRotationService</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:gameserver~MapRotationService_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-gameserver-MapRotationService.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-gameserver-MapRotationService.html#getRandomMap">getRandomMap</a></li><li><a href="module-gameserver-MapRotationService.html#onIntermission">onIntermission</a></li><li><a href="module-gameserver-MapRotationService.html#setDependencies">setDependencies</a></li><li><a href="module-gameserver-MapRotationService.html#setMap">setMap</a></li></ul></div></li><li><a href="module-instances-InstanceManager.html">InstanceManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:instances~InstanceManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-instances-InstanceManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-instances-InstanceManager.html#clear">clear</a></li><li><a href="module-instances-InstanceManager.html#connect">connect</a></li><li><a href="module-instances-InstanceManager.html#create">create</a></li><li><a href="module-instances-InstanceManager.html#disconnect">disconnect</a></li><li><a href="module-instances-InstanceManager.html#exists">exists</a></li><li><a href="module-instances-InstanceManager.html#getCurrentProfile">getCurrentProfile</a></li><li><a href="module-instances-InstanceManager.html#getHostname">getHostname</a></li><li><a href="module-instances-InstanceManager.html#getInstancesByState">getInstancesByState</a></li><li><a href="module-instances-InstanceManager.html#getInstancesByType">getInstancesByType</a></li><li><a href="module-instances-InstanceManager.html#getPort">getPort</a></li><li><a href="module-instances-InstanceManager.html#getTransition">getTransition</a></li><li><a href="module-instances-InstanceManager.html#isValidInstanceType">isValidInstanceType</a></li><li><a href="module-instances-InstanceManager.html#killProcess">killProcess</a></li><li><a href="module-instances-InstanceManager.html#loadInstances">loadInstances</a></li><li><a href="module-instances-InstanceManager.html#pause">pause</a></li><li><a href="module-instances-InstanceManager.html#remove">remove</a></li><li><a href="module-instances-InstanceManager.html#resume">resume</a></li><li><a href="module-instances-InstanceManager.html#saveInstances">saveInstances</a></li><li><a href="module-instances-InstanceManager.html#setDependencies">setDependencies</a></li><li><a href="module-instances-InstanceManager.html#shutdownProcess">shutdownProcess</a></li><li><a href="module-instances-InstanceManager.html#start">start</a></li><li><a href="module-instances-InstanceManager.html#startAll">startAll</a></li><li><a href="module-instances-InstanceManager.html#stop">stop</a></li><li><a href="module-instances-InstanceManager.html#stopAll">stopAll</a></li><li><a href="module-instances-InstanceManager.html#transist">transist</a></li></ul></div></li><li><a href="module-interfaces-LayerManager.html">LayerManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:interfaces~LayerManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-interfaces-LayerManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-interfaces-LayerManager.html#createLayer">createLayer</a></li><li><a href="module-interfaces-LayerManager.html#hideLayer">hideLayer</a></li><li><a href="module-interfaces-LayerManager.html#reloadLayer">reloadLayer</a></li><li><a href="module-interfaces-LayerManager.html#removeLayer">removeLayer</a></li><li><a href="module-interfaces-LayerManager.html#setAcceptingKeyInput">setAcceptingKeyInput</a></li><li><a href="module-interfaces-LayerManager.html#setAcceptingMouseInput">setAcceptingMouseInput</a></li><li><a href="module-interfaces-LayerManager.html#setDependencies">setDependencies</a></li><li><a href="module-interfaces-LayerManager.html#setLayerUrl">setLayerUrl</a></li><li><a href="module-interfaces-LayerManager.html#showLayer">showLayer</a></li></ul></div></li><li><a href="module-logging-LogManager.html">LogManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:logging~LogManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-logging-LogManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-logging-LogManager.html#clear">clear</a></li><li><a href="module-logging-LogManager.html#createLogger">createLogger</a></li><li><a href="module-logging-LogManager.html#getLogger">getLogger</a></li><li><a href="module-logging-LogManager.html#loadLogConfiguration">loadLogConfiguration</a></li><li><a href="module-logging-LogManager.html#setDependencies">setDependencies</a></li><li><a href="module-logging-LogManager.html#setLoglevel">setLoglevel</a></li></ul></div></li><li><a href="module-media-MapManager.html">MapManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:media~MapManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-media-MapManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-media-MapManager.html#convert">convert</a></li><li><a href="module-media-MapManager.html#createConfigTree">createConfigTree</a></li><li><a href="module-media-MapManager.html#findMapFiles">findMapFiles</a></li><li><a href="module-media-MapManager.html#getMapNames">getMapNames</a></li><li><a href="module-media-MapManager.html#loadMapConfiguration">loadMapConfiguration</a></li><li><a href="module-media-MapManager.html#setDependencies">setDependencies</a></li><li><a href="module-media-MapManager.html#updateMaps">updateMaps</a></li></ul></div></li><li><a href="module-media-TextureManager.html">TextureManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:media~TextureManager_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="module-media-TextureManager.html#textureTypes">textureTypes</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="module-media-TextureManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-media-TextureManager.html#findTextureFilesByTypes">findTextureFilesByTypes</a></li><li><a href="module-media-TextureManager.html#setDependencies">setDependencies</a></li><li><a href="module-media-TextureManager.html#updateTextures">updateTextures</a></li></ul></div></li><li><a href="module-profiles-ProfileManager.html">ProfileManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="module:profiles~ProfileManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="module-profiles-ProfileManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="module-profiles-ProfileManager.html#create">create</a></li><li><a href="module-profiles-ProfileManager.html#exists">exists</a></li><li><a href="module-profiles-ProfileManager.html#getAllProfiles">getAllProfiles</a></li><li><a href="module-profiles-ProfileManager.html#getConfigPath">getConfigPath</a></li><li><a href="module-profiles-ProfileManager.html#getCurrentProfile">getCurrentProfile</a></li><li><a href="module-profiles-ProfileManager.html#getCurrentProfileName">getCurrentProfileName</a></li><li><a href="module-profiles-ProfileManager.html#getDefaultProfile">getDefaultProfile</a></li><li><a href="module-profiles-ProfileManager.html#getDefaultProfileName">getDefaultProfileName</a></li><li><a href="module-profiles-ProfileManager.html#getProfile">getProfile</a></li><li><a href="module-profiles-ProfileManager.html#getProfilesConfigPath">getProfilesConfigPath</a></li><li><a href="module-profiles-ProfileManager.html#loadProfiles">loadProfiles</a></li><li><a href="module-profiles-ProfileManager.html#remove">remove</a></li><li><a href="module-profiles-ProfileManager.html#saveProfiles">saveProfiles</a></li><li><a href="module-profiles-ProfileManager.html#setCurrentProfile">setCurrentProfile</a></li><li><a href="module-profiles-ProfileManager.html#setDependencies">setDependencies</a></li><li><a href="module-profiles-ProfileManager.html#switchTo">switchTo</a></li></ul></div></li><li><a href="Node.html">Node</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="Node_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="Node.html#.addChild">addChild</a></li><li><a href="Node.html#.addLink">addLink</a></li><li><a href="Node.html#.addNode">addNode</a></li><li><a href="Node.html#.firstChild">firstChild</a></li><li><a href="Node.html#.get">get</a></li><li><a href="Node.html#.getChild">getChild</a></li><li><a href="Node.html#.getChildNames">getChildNames</a></li><li><a href="Node.html#.getName">getName</a></li><li><a href="Node.html#.getOrCreateNode">getOrCreateNode</a></li><li><a href="Node.html#.getParent">getParent</a></li><li><a href="Node.html#.getPath">getPath</a></li><li><a href="Node.html#.getRoot">getRoot</a></li><li><a href="Node.html#.hasChild">hasChild</a></li><li><a href="Node.html#.hasChildren">hasChildren</a></li><li><a href="Node.html#.isChildOf">isChildOf</a></li><li><a href="Node.html#.removeAllChildren">removeAllChildren</a></li><li><a href="Node.html#.removeChild">removeChild</a></li><li><a href="Node.html#.set">set</a></li><li><a href="Node.html#.size">size</a></li><li><a href="Node.html#.toJson">toJson</a></li><li><a href="Node.html#.toObject">toObject</a></li><li><a href="Node.html#.toString">toString</a></li><li><a href="Node.html#getFlatRepresentation">getFlatRepresentation</a></li></ul></div></li><li><a href="PidManager.html">PidManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="PidManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="PidManager.html#createPid">createPid</a></li></ul></div></li><li><a href="ProcessManager.html">ProcessManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="ProcessManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="ProcessManager.html#createProcessHandlers">createProcessHandlers</a></li><li><a href="ProcessManager.html#onExit">onExit</a></li><li><a href="ProcessManager.html#onReloadSignal">onReloadSignal</a></li><li><a href="ProcessManager.html#onSegfault">onSegfault</a></li><li><a href="ProcessManager.html#onShutdownSignal">onShutdownSignal</a></li><li><a href="ProcessManager.html#onUncaughtException">onUncaughtException</a></li></ul></div></li><li><a href="ProfilesRestAPI.html">ProfilesRestAPI</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="ProfilesRestAPI_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="ProfilesRestAPI.html#createProfile">createProfile</a></li><li><a href="ProfilesRestAPI.html#dumpProfilesTree">dumpProfilesTree</a></li><li><a href="ProfilesRestAPI.html#listProfiles">listProfiles</a></li><li><a href="ProfilesRestAPI.html#removeProfile">removeProfile</a></li><li><a href="ProfilesRestAPI.html#switchToProfile">switchToProfile</a></li></ul></div></li><li><a href="ReleaseManager.html">ReleaseManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="ReleaseManager_sub"><div class="member-type">Members</div><ul class="inner"><li><a href="ReleaseManager.html#fetching">fetching</a></li></ul><div class="member-type">Methods</div><ul class="inner"><li><a href="ReleaseManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="ReleaseManager.html#checkForNewReleases">checkForNewReleases</a></li><li><a href="ReleaseManager.html#determinePlatform">determinePlatform</a></li><li><a href="ReleaseManager.html#downloadRelease">downloadRelease</a></li><li><a href="ReleaseManager.html#getBinaryPath">getBinaryPath</a></li><li><a href="ReleaseManager.html#getConfigPath">getConfigPath</a></li><li><a href="ReleaseManager.html#getExecutableName">getExecutableName</a></li><li><a href="ReleaseManager.html#getOrInstallRelease">getOrInstallRelease</a></li><li><a href="ReleaseManager.html#getRelease">getRelease</a></li><li><a href="ReleaseManager.html#getVersionStrFromZipName">getVersionStrFromZipName</a></li><li><a href="ReleaseManager.html#installRelease">installRelease</a></li><li><a href="ReleaseManager.html#loadConfig">loadConfig</a></li><li><a href="ReleaseManager.html#makeZipNameFromVersion">makeZipNameFromVersion</a></li><li><a href="ReleaseManager.html#mkdirLocalCache">mkdirLocalCache</a></li><li><a href="ReleaseManager.html#saveConfig">saveConfig</a></li><li><a href="ReleaseManager.html#setDependencies">setDependencies</a></li><li><a href="ReleaseManager.html#uninstallRelease">uninstallRelease</a></li></ul></div></li><li><a href="ReleasesRestAPI.html">ReleasesRestAPI</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="ReleasesRestAPI_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="ReleasesRestAPI.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="ReleasesRestAPI.html#fetchReleases">fetchReleases</a></li><li><a href="ReleasesRestAPI.html#getReleaseInfo">getReleaseInfo</a></li><li><a href="ReleasesRestAPI.html#listReleases">listReleases</a></li><li><a href="ReleasesRestAPI.html#setDependencies">setDependencies</a></li></ul></div></li><li><a href="Root.html">Root</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="Root_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="Root.html#.createRecursive">createRecursive</a></li><li><a href="Root.html#.findNode">findNode</a></li><li><a href="Root.html#contains">contains</a></li></ul></div></li><li><a href="TreeClient.html">TreeClient</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="TreeClient_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="TreeClient.html#branchMediaRepository">branchMediaRepository</a></li><li><a href="TreeClient.html#callEndpoint">callEndpoint</a></li><li><a href="TreeClient.html#clientWindowFullscreen">clientWindowFullscreen</a></li><li><a href="TreeClient.html#clientWindowMaximize">clientWindowMaximize</a></li><li><a href="TreeClient.html#clientWindowMinimize">clientWindowMinimize</a></li><li><a href="TreeClient.html#clientWindowRestore">clientWindowRestore</a></li><li><a href="TreeClient.html#connectInstance">connectInstance</a></li><li><a href="TreeClient.html#createEndpoint">createEndpoint</a></li><li><a href="TreeClient.html#createInstance">createInstance</a></li><li><a href="TreeClient.html#createMediaRepository">createMediaRepository</a></li><li><a href="TreeClient.html#createProfile">createProfile</a></li><li><a href="TreeClient.html#deleteTreeNode">deleteTreeNode</a></li><li><a href="TreeClient.html#downloadRelease">downloadRelease</a></li><li><a href="TreeClient.html#dumpInstanceTree">dumpInstanceTree</a></li><li><a href="TreeClient.html#fetchReleases">fetchReleases</a></li><li><a href="TreeClient.html#getAllInstances">getAllInstances</a></li><li><a href="TreeClient.html#getEndpointUrl">getEndpointUrl</a></li><li><a href="TreeClient.html#getFlexLog">getFlexLog</a></li><li><a href="TreeClient.html#getFlexSysInfo">getFlexSysInfo</a></li><li><a href="TreeClient.html#getFlexVersion">getFlexVersion</a></li><li><a href="TreeClient.html#getInstance">getInstance</a></li><li><a href="TreeClient.html#getReleaseInfo">getReleaseInfo</a></li><li><a href="TreeClient.html#getTreeNode">getTreeNode</a></li><li><a href="TreeClient.html#installRelease">installRelease</a></li><li><a href="TreeClient.html#listReleases">listReleases</a></li><li><a href="TreeClient.html#loadReleases">loadReleases</a></li><li><a href="TreeClient.html#readHJsonConfig">readHJsonConfig</a></li><li><a href="TreeClient.html#readTOMLConfig">readTOMLConfig</a></li><li><a href="TreeClient.html#removeInstance">removeInstance</a></li><li><a href="TreeClient.html#removeMediaRepository">removeMediaRepository</a></li><li><a href="TreeClient.html#removeProfile">removeProfile</a></li><li><a href="TreeClient.html#saveReleases">saveReleases</a></li><li><a href="TreeClient.html#scanMediaRepositories">scanMediaRepositories</a></li><li><a href="TreeClient.html#setTreeNode">setTreeNode</a></li><li><a href="TreeClient.html#shutdownFlex">shutdownFlex</a></li><li><a href="TreeClient.html#startAllInstances">startAllInstances</a></li><li><a href="TreeClient.html#startInstance">startInstance</a></li><li><a href="TreeClient.html#stopAllInstances">stopAllInstances</a></li><li><a href="TreeClient.html#stopInstance">stopInstance</a></li><li><a href="TreeClient.html#switchProfile">switchProfile</a></li><li><a href="TreeClient.html#synchronizeInstance">synchronizeInstance</a></li><li><a href="TreeClient.html#uninstallRelease">uninstallRelease</a></li><li><a href="TreeClient.html#updateMediaRepository">updateMediaRepository</a></li></ul></div></li><li><a href="WebUserInterfaceManager.html">WebUserInterfaceManager</a><button type="button" class="hidden toggle-subnav btn btn-link">  <span class="glyphicon glyphicon-plus"></span></button><div class="hidden" id="WebUserInterfaceManager_sub"><div class="member-type">Methods</div><ul class="inner"><li><a href="WebUserInterfaceManager.html#afterPropertiesSet">afterPropertiesSet</a></li><li><a href="WebUserInterfaceManager.html#createInterface">createInterface</a></li><li><a href="WebUserInterfaceManager.html#disableInterface">disableInterface</a></li><li><a href="WebUserInterfaceManager.html#enableInterface">enableInterface</a></li><li><a href="WebUserInterfaceManager.html#getAbsoluteFsPath">getAbsoluteFsPath</a></li><li><a href="WebUserInterfaceManager.html#getFullUrl">getFullUrl</a></li><li><a href="WebUserInterfaceManager.html#getInterfaceNames">getInterfaceNames</a></li><li><a href="WebUserInterfaceManager.html#getPath">getPath</a></li><li><a href="WebUserInterfaceManager.html#getRelativeFsPath">getRelativeFsPath</a></li><li><a href="WebUserInterfaceManager.html#getRelativeUrl">getRelativeUrl</a></li><li><a href="WebUserInterfaceManager.html#interfaceExists">interfaceExists</a></li><li><a href="WebUserInterfaceManager.html#loadInterfaces">loadInterfaces</a></li><li><a href="WebUserInterfaceManager.html#removeInterface">removeInterface</a></li><li><a href="WebUserInterfaceManager.html#scanForInterfaces">scanForInterfaces</a></li><li><a href="WebUserInterfaceManager.html#setDependencies">setDependencies</a></li><li><a href="WebUserInterfaceManager.html#updateInterface">updateInterface</a></li><li><a href="WebUserInterfaceManager.html#updateInterfaceNode">updateInterfaceNode</a></li></ul></div></li></ul></div><div class="lnb-api hidden"><h3>Global</h3><ul><li class="hidden"><a href="global.html#datatype">datatype</a></li><li class="hidden"><a href="global.html#Flex">Flex</a></li><li><a href="global.html#isValidDataType">isValidDataType</a></li><li><a href="global.html#media_types">media_types</a></li><li><a href="global.html#repository_types">repository_types</a></li><li><a href="global.html#separator">separator</a></li><li><a href="global.html#validName">validName</a></li></ul></div>
 </nav>
+<div id="resizer"></div>
 
-<div id="main">
-    
-    <h1 class="page-title">Connector</h1>
-    
-
+<div class="main" id="main">
     
 
 
@@ -42,11 +48,8 @@
 
 <header>
     
-        <h2>
-            <span class="ancestors"><a href="module-connector.html">connector</a>~</span>
-        
-        Connector
-        </h2>
+        <h2><span class="attribs"><span class="type-signature"></span></span>
+            <span class="ancestors"><a href="module-connector.html">connector</a>~</span>Connector<span class="signature">(instance_node)</span><span class="type-signature"></span></h2>
         
             <div class="class-description">Connects a <a href="Root.html">Root</a> with a Inexor Core instance</div>
         
@@ -54,23 +57,103 @@
 </header>
 
 <article>
-    <div class="container-overview">
     
+        <div class="container-overview">
         
-<div class="section-method">
+            
+
+<dt>
+    
+        <h4 class="name" id="Connector">
+            
+                new <span class="type-signature"></span>Connector<span class="signature">(instance_node)</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line19">line 19</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
 
     
-    <h2>Constructor</h2>
-    
-
-    <h4 class="name" id="Connector"><span class="type-signature"></span>new Connector<span class="signature">(instance_node)</span><span class="type-signature"></span></h4>
 
     
 
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>instance_node</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">tree.Node</span>
 
 
+            
+            </td>
 
+            
 
+            
+
+            <td class="description last">the instance node</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -100,13 +183,6 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line19">line 19</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -114,82 +190,15 @@
 </dl>
 
 
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
 
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
+</dd>
 
         
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
+        </div>
     
 
-        <tr>
-            
-                <td class="name"><code>instance_node</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>tree.Node</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                the instance node
-                
-            </td>
-        </tr>
-
     
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-    
-    </div>
 
     
 
@@ -197,23 +206,37 @@
 
     
 
-     
+    
 
     
 
     
         <h3 class="subsection-title">Members</h3>
 
-        
+        <dl>
             
-<div class="section-members">
-<h4 class="name" id="protoDescriptor"><span class="type-signature"></span>protoDescriptor<span class="type-signature"></span></h4>
+
+<dt>
+<h4 class="name" id="protoDescriptor">
+    <span class="type-signature"></span>protoDescriptor<span class="type-signature"></span>
+    
+    <div class="container-source members">
+        <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+        <code><a href="src_instances_Connector.js.html#line76">line 76</a></code>
+    </div>
+    
+</h4>
 
 
+</dt>
+<dd>
+    
 
+    <!--
+    
+    -->
 
-
-
+    
 
 
     <h5 class="subsection-title">Properties:</h5>
@@ -248,7 +271,7 @@
             <td class="type">
             
                 
-<span class="param-type"><code>Object</code></span>
+<span class="param-type">Object</span>
 
 
             
@@ -261,8 +284,6 @@
             <td class="description last"></td>
         </tr>
 
-        
-
     
     </tbody>
 </table>
@@ -297,13 +318,6 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line76">line 76</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -311,37 +325,66 @@
 </dl>
 
 
+    
 
+    
+</dd>
 
-
-
-
-</div>
-
-        
+        </dl>
     
 
     
         <h3 class="subsection-title">Methods</h3>
 
-        
+        <dl>
+                
+
+<dt>
+    
+        <h4 class="name" id="addSynchronizeListener">
             
-<div class="section-method">
+                <span class="type-signature"></span>addSynchronizeListener<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line327">line 327</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Add a new listener for the GRPC synchronize service.
+    </div>
+    
 
     
 
-    <h4 class="name" id="addSynchronizeListener"><span class="type-signature"></span>addSynchronizeListener<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    Add a new listener for the GRPC synchronize service.
-</div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -371,13 +414,6 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line327">line 327</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -385,46 +421,59 @@
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="addTreeNodeSyncListenersFromDefaults">
+            
+                <span class="type-signature"></span>addTreeNodeSyncListenersFromDefaults<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line413">line 413</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Adds synchronization listeners for all tree nodes and sends the current value of the node.
+    </div>
+    
 
     
 
-    <h4 class="name" id="addTreeNodeSyncListenersFromDefaults"><span class="type-signature"></span>addTreeNodeSyncListenersFromDefaults<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    Adds synchronization listeners for all tree nodes and sends the current value of the node.
-</div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -454,13 +503,6 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line413">line 413</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -468,46 +510,59 @@
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="closeGrpcConnection">
+            
+                <span class="type-signature"></span>closeGrpcConnection<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line371">line 371</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Closes the GRPC connection.
+    </div>
+    
 
     
 
-    <h4 class="name" id="closeGrpcConnection"><span class="type-signature"></span>closeGrpcConnection<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    Closes the GRPC connection.
-</div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -537,13 +592,6 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line371">line 371</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -551,46 +599,83 @@
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="connect">
+            
+                <span class="type-signature"></span>connect<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;tree.Node>}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line210">line 210</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Connecting to the gRPC server of Inexor Core.
+    </div>
+    
 
     
 
-    <h4 class="name" id="connect"><span class="type-signature"></span>connect<span class="signature">()</span><span class="type-signature"> &rarr; {Promise.&lt;tree.Node>}</span></h4>
+    
 
     
 
+    
+
+    
+
+    
+    <h5>Fires:</h5>
+    <ul>
+        <li>Connector.event:connected</li>
+    </ul>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
+        
+                
 
 
-<div class="description">
-    Connecting to the gRPC server of Inexor Core.
-</div>
+
+<span class="param-type">Promise.&lt;tree.Node></span>
 
 
 
+
+
+
+
+
+            
+    </div>
+    
+
+    
 
 
 <dl class="details">
@@ -620,13 +705,6 @@
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line210">line 210</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -634,73 +712,60 @@
 </dl>
 
 
-
-
-
-
-
-
-
-
-
-
-
-<h5>Fires:</h5>
-<ul>
-    <li>Connector.event:connected</li>
-</ul>
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>Promise.&lt;tree.Node></code></span>
-
-
-    </dd>
-</dl>
-
-
     
-</div>
 
+</dd>
 
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="convert">
+            
+                <span class="type-signature"></span>convert<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line495">line 495</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="convert"><span class="type-signature"></span>convert<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Converts an incoming string value to the target datatype.
+    <div class="description">
+        Converts an incoming string value to the target datatype.
 TODO: move to tree utils
-</div>
+    </div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -730,13 +795,6 @@ TODO: move to tree utils
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line495">line 495</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -744,58 +802,36 @@ TODO: move to tree utils
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="getDataType">
+            
+                <span class="type-signature"></span>getDataType<span class="signature">(protoKey)</span><span class="type-signature"> &rarr; {<a href="global.html#datatype">datatype</a>}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line589">line 589</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="getDataType"><span class="type-signature"></span>getDataType<span class="signature">(protoKey)</span><span class="type-signature"> &rarr; {<a href="global.html#datatype">datatype</a>}</span></h4>
-
-    
-
-
-
-<div class="description">
-    Returns the datatype of the field by proto key.
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
+    <div class="description">
+        Returns the datatype of the field by proto key.
+    </div>
     
 
     
@@ -805,38 +841,9 @@ TODO: move to tree utils
     
 
     
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line589">line 589</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
 <table class="params">
     <thead>
     <tr>
@@ -865,7 +872,7 @@ TODO: move to tree utils
             <td class="type">
             
                 
-<span class="param-type"><code>string</code></span>
+<span class="param-type">string</span>
 
 
             
@@ -875,71 +882,48 @@ TODO: move to tree utils
 
             
 
-            <td class="description last">
-                
-                
-            </td>
+            <td class="description last"></td>
         </tr>
 
     
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code><a href="global.html#datatype">datatype</a></code></span>
-
-
-    </dd>
-</dl>
-
+    </div>
+    
 
     
-</div>
 
+    
 
+    
 
-</div>
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
         
+                
+
+
+
+<span class="param-type"><a href="global.html#datatype">datatype</a></span>
+
+
+
+
+
+
+
+
             
-<div class="section-method">
-
+    </div>
     
 
-    <h4 class="name" id="getDefaultValue"><span class="type-signature"></span>getDefaultValue<span class="signature">(protoKey)</span><span class="type-signature"> &rarr; {string}</span></h4>
-
     
-
-
-
-<div class="description">
-    Returns the default value of the field by proto key.
-</div>
-
-
-
 
 
 <dl class="details">
@@ -969,13 +953,6 @@ TODO: move to tree utils
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line600">line 600</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -983,16 +960,48 @@ TODO: move to tree utils
 </dl>
 
 
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
 
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="getDefaultValue">
+            
+                <span class="type-signature"></span>getDefaultValue<span class="signature">(protoKey)</span><span class="type-signature"> &rarr; {string}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line600">line 600</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns the default value of the field by proto key.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
 <table class="params">
     <thead>
     <tr>
@@ -1021,7 +1030,7 @@ TODO: move to tree utils
             <td class="type">
             
                 
-<span class="param-type"><code>string</code></span>
+<span class="param-type">string</span>
 
 
             
@@ -1031,71 +1040,48 @@ TODO: move to tree utils
 
             
 
-            <td class="description last">
-                The proto key.
-                
-            </td>
+            <td class="description last">The proto key.</td>
         </tr>
 
     
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>string</code></span>
-
-
-    </dd>
-</dl>
-
+    </div>
+    
 
     
-</div>
 
+    
 
+    
 
-</div>
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
         
+                
+
+
+
+<span class="param-type">string</span>
+
+
+
+
+
+
+
+
             
-<div class="section-method">
-
+    </div>
     
 
-    <h4 class="name" id="getEventType"><span class="type-signature"></span>getEventType<span class="signature">(protoKey)</span><span class="type-signature"> &rarr; {string}</span></h4>
-
     
-
-
-
-<div class="description">
-    Returns the event type of the field by proto key.
-</div>
-
-
-
 
 
 <dl class="details">
@@ -1125,13 +1111,6 @@ TODO: move to tree utils
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line641">line 641</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -1139,16 +1118,48 @@ TODO: move to tree utils
 </dl>
 
 
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
 
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="getEventType">
+            
+                <span class="type-signature"></span>getEventType<span class="signature">(protoKey)</span><span class="type-signature"> &rarr; {string}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line641">line 641</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns the event type of the field by proto key.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
 <table class="params">
     <thead>
     <tr>
@@ -1177,7 +1188,7 @@ TODO: move to tree utils
             <td class="type">
             
                 
-<span class="param-type"><code>string</code></span>
+<span class="param-type">string</span>
 
 
             
@@ -1187,71 +1198,48 @@ TODO: move to tree utils
 
             
 
-            <td class="description last">
-                The proto key.
-                
-            </td>
+            <td class="description last">The proto key.</td>
         </tr>
 
     
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>string</code></span>
-
-
-    </dd>
-</dl>
-
+    </div>
+    
 
     
-</div>
 
+    
 
+    
 
-</div>
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
         
+                
+
+
+
+<span class="param-type">string</span>
+
+
+
+
+
+
+
+
             
-<div class="section-method">
-
+    </div>
     
 
-    <h4 class="name" id="getId"><span class="type-signature"></span>getId<span class="signature">(protoKey)</span><span class="type-signature"> &rarr; {number}</span></h4>
-
     
-
-
-
-<div class="description">
-    Returns the id of the field by proto key.
-</div>
-
-
-
 
 
 <dl class="details">
@@ -1281,13 +1269,6 @@ TODO: move to tree utils
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line630">line 630</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -1295,16 +1276,48 @@ TODO: move to tree utils
 </dl>
 
 
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
 
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="getId">
+            
+                <span class="type-signature"></span>getId<span class="signature">(protoKey)</span><span class="type-signature"> &rarr; {number}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line630">line 630</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns the id of the field by proto key.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
 <table class="params">
     <thead>
     <tr>
@@ -1333,7 +1346,7 @@ TODO: move to tree utils
             <td class="type">
             
                 
-<span class="param-type"><code>string</code></span>
+<span class="param-type">string</span>
 
 
             
@@ -1343,72 +1356,138 @@ TODO: move to tree utils
 
             
 
-            <td class="description last">
-                The proto key.
-                
-            </td>
+            <td class="description last">The proto key.</td>
         </tr>
 
     
     </tbody>
 </table>
 
+    </div>
+    
 
+    
 
+    
 
+    
 
+    
 
+    
 
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
         
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>number</code></span>
+                
 
 
-    </dd>
+
+<span class="param-type">number</span>
+
+
+
+
+
+
+
+
+            
+    </div>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 </dl>
 
 
     
-</div>
 
+</dd>
 
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="getLoggerName">
+            
+                <span class="type-signature"></span>getLoggerName<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line86">line 86</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="getLoggerName"><span class="type-signature"></span>getLoggerName<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Returns the logger name for the connector instance. Uses the hostname,
+    <div class="description">
+        Returns the logger name for the connector instance. Uses the hostname,
 port and session id as logger name.
-</div>
+    </div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -1438,13 +1517,6 @@ port and session id as logger name.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line86">line 86</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -1452,58 +1524,36 @@ port and session id as logger name.
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="getMessage">
+            
+                <span class="type-signature"></span>getMessage<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line168">line 168</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="getMessage"><span class="type-signature"></span>getMessage<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Returns a new message.
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
+    <div class="description">
+        Returns a new message.
+    </div>
     
 
     
@@ -1513,38 +1563,9 @@ port and session id as logger name.
     
 
     
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line168">line 168</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
 <table class="params">
     <thead>
     <tr>
@@ -1578,51 +1599,29 @@ port and session id as logger name.
 
             
 
-            <td class="description last">
-                node - The tree node to be sent.
-                
-            </td>
+            <td class="description last">node - The tree node to be sent.</td>
         </tr>
 
     
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
-            
-<div class="section-method">
+    </div>
+    
 
     
 
-    <h4 class="name" id="getPath"><span class="type-signature"></span>getPath<span class="signature">(protoKey)</span><span class="type-signature"> &rarr; {string}</span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    Returns the path of the field by proto key. The path is prefixed with the
-path of instance node.
-</div>
+    
 
-
-
+    
 
 
 <dl class="details">
@@ -1652,13 +1651,6 @@ path of instance node.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line571">line 571</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -1666,16 +1658,49 @@ path of instance node.
 </dl>
 
 
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
     
 
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="getPath">
+            
+                <span class="type-signature"></span>getPath<span class="signature">(protoKey)</span><span class="type-signature"> &rarr; {string}</span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line571">line 571</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns the path of the field by proto key. The path is prefixed with the
+path of instance node.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
 <table class="params">
     <thead>
     <tr>
@@ -1704,7 +1729,7 @@ path of instance node.
             <td class="type">
             
                 
-<span class="param-type"><code>string</code></span>
+<span class="param-type">string</span>
 
 
             
@@ -1714,75 +1739,50 @@ path of instance node.
 
             
 
-            <td class="description last">
-                The proto key.
-                
-            </td>
+            <td class="description last">The proto key.</td>
         </tr>
 
     
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>string</code></span>
-
-
-    </dd>
-</dl>
-
-
-<div class="param-desc">
-    The path to the node.
-</div>
+    </div>
+    
 
     
-</div>
 
+    
 
+    
 
-</div>
+    
+
+    
+
+    
+    <div class="container-returns">
+        <h5>Returns:</h5>
         
+                
+
+
+
+<span class="param-type">string</span>
+
+
+
+
+
+- The path to the node.
+
+
+
+
             
-<div class="section-method">
-
+    </div>
     
 
-    <h4 class="name" id="linkTreeMounts"><span class="type-signature"></span>linkTreeMounts<span class="signature">()</span><span class="type-signature"></span></h4>
-
     
-
-
-
-<div class="description">
-    Links other nodes in the tree into the instance tree.
-</div>
-
-
-
 
 
 <dl class="details">
@@ -1812,13 +1812,6 @@ path of instance node.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line461">line 461</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -1826,46 +1819,59 @@ path of instance node.
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="linkTreeMounts">
+            
+                <span class="type-signature"></span>linkTreeMounts<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line461">line 461</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Links other nodes in the tree into the instance tree.
+    </div>
+    
 
     
 
-    <h4 class="name" id="loadInstanceConfiguration"><span class="type-signature"></span>loadInstanceConfiguration<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    Load instance configuration.
-</div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -1895,10 +1901,92 @@ path of instance node.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line441">line 441</a>
-    </li></ul></dd>
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="loadInstanceConfiguration">
+            
+                <span class="type-signature"></span>loadInstanceConfiguration<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line441">line 441</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Load instance configuration.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -1909,51 +1997,37 @@ path of instance node.
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="onNewTreeNode">
+            
+                <span class="type-signature"></span>onNewTreeNode<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line180">line 180</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="onNewTreeNode"><span class="type-signature"></span>onNewTreeNode<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    A new tree node has been created for the instance. We register a listener on
+    <div class="description">
+        A new tree node has been created for the instance. We register a listener on
 the sync event of the newly created tree node.
-</div>
-
-
-
-
-
-<dl class="details">
-
+    </div>
     
 
     
@@ -1963,46 +2037,9 @@ the sync event of the newly created tree node.
     
 
     
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line180">line 180</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
+    <div class="container-params">
+        <h5>Parameters:</h5>
+        
 <table class="params">
     <thead>
     <tr>
@@ -2036,50 +2073,29 @@ the sync event of the newly created tree node.
 
             
 
-            <td class="description last">
-                node - The tree node which has been created.
-                
-            </td>
+            <td class="description last">node - The tree node which has been created.</td>
         </tr>
 
     
     </tbody>
 </table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
-            
-<div class="section-method">
+    </div>
+    
 
     
 
-    <h4 class="name" id="onTreeNodeSync"><span class="type-signature"></span>onTreeNodeSync<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    The tree node has been modified and shall be synchronized.
-</div>
+    
 
-
-
+    
 
 
 <dl class="details">
@@ -2109,13 +2125,6 @@ the sync event of the newly created tree node.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line152">line 152</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -2123,46 +2132,59 @@ the sync event of the newly created tree node.
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="onTreeNodeSync">
+            
+                <span class="type-signature"></span>onTreeNodeSync<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line152">line 152</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        The tree node has been modified and shall be synchronized.
+    </div>
+    
 
     
 
-    <h4 class="name" id="populateInstanceTreeFromDefaults"><span class="type-signature"></span>populateInstanceTreeFromDefaults<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    Populates the tree.
-</div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -2192,13 +2214,6 @@ the sync event of the newly created tree node.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line384">line 384</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -2206,46 +2221,59 @@ the sync event of the newly created tree node.
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="populateInstanceTreeFromDefaults">
+            
+                <span class="type-signature"></span>populateInstanceTreeFromDefaults<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line384">line 384</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Populates the tree.
+    </div>
+    
 
     
 
-    <h4 class="name" id="removeGrpcListeners"><span class="type-signature"></span>removeGrpcListeners<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    Remove all listeners for the GRPC synchronize service.
-</div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -2275,13 +2303,6 @@ the sync event of the newly created tree node.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line360">line 360</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -2289,46 +2310,59 @@ the sync event of the newly created tree node.
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="removeGrpcListeners">
+            
+                <span class="type-signature"></span>removeGrpcListeners<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line360">line 360</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Remove all listeners for the GRPC synchronize service.
+    </div>
+    
 
     
 
-    <h4 class="name" id="removeListeners"><span class="type-signature"></span>removeListeners<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    Removes all listeners.
-</div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -2358,13 +2392,6 @@ the sync event of the newly created tree node.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line338">line 338</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -2372,46 +2399,59 @@ the sync event of the newly created tree node.
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="removeListeners">
+            
+                <span class="type-signature"></span>removeListeners<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line338">line 338</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Removes all listeners.
+    </div>
+    
 
     
 
-    <h4 class="name" id="removeTreeListeners"><span class="type-signature"></span>removeTreeListeners<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    Removes all listeners for the inexor tree.
-</div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -2441,10 +2481,92 @@ the sync event of the newly created tree node.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line346">line 346</a>
-    </li></ul></dd>
+
+    
+
+    
+</dl>
+
+
+    
+
+</dd>
+
+            
+                
+
+<dt>
+    
+        <h4 class="name" id="removeTreeListeners">
+            
+                <span class="type-signature"></span>removeTreeListeners<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line346">line 346</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Removes all listeners for the inexor tree.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -2455,47 +2577,60 @@ the sync event of the newly created tree node.
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="sendFinishedTreeIntro">
+            
+                <span class="type-signature"></span>sendFinishedTreeIntro<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line553">line 553</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
 
     
-
-    <h4 class="name" id="sendFinishedTreeIntro"><span class="type-signature"></span>sendFinishedTreeIntro<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Sends an event to Inexor Core which signals that the tree initialization
+    <div class="description">
+        Sends an event to Inexor Core which signals that the tree initialization
 has been finished.
-</div>
+    </div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -2525,13 +2660,6 @@ has been finished.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line553">line 553</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -2539,46 +2667,59 @@ has been finished.
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
             
-<div class="section-method">
+                
+
+<dt>
+    
+        <h4 class="name" id="updateTree">
+            
+                <span class="type-signature"></span>updateTree<span class="signature">()</span><span class="type-signature"></span>
+                
+            
+            <div class="container-source members">
+                <code><a href="src_instances_Connector.js.html">src/instances/Connector.js</a></code>,
+                <code><a href="src_instances_Connector.js.html#line469">line 469</a></code>
+            </div>
+            
+        </h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        TODO: move this to the tree root. Could be useful for merging trees and for introducing GraphQL.
+    </div>
+    
 
     
 
-    <h4 class="name" id="updateTree"><span class="type-signature"></span>updateTree<span class="signature">()</span><span class="type-signature"></span></h4>
+    
 
     
 
+    
 
+    
 
-<div class="description">
-    TODO: move this to the tree root. Could be useful for merging trees and for introducing GraphQL.
-</div>
+    
 
+    
 
+    
 
+    
+
+    
+
+    
 
 
 <dl class="details">
@@ -2608,13 +2749,6 @@ has been finished.
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="src_instances_Connector.js.html">src/instances/Connector.js</a>, <a href="src_instances_Connector.js.html#line469">line 469</a>
-    </li></ul></dd>
-    
-
-    
 
     
 
@@ -2622,29 +2756,11 @@ has been finished.
 </dl>
 
 
+    
 
+</dd>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
+            </dl>
     
 
     
@@ -2659,13 +2775,24 @@ has been finished.
 
 </div>
 
-<br class="clear">
-
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon Nov 13 2017 23:17:44 GMT+0000 (UTC) using the Minami theme.
+    <img class="logo" src="https://raw.githubusercontent.com/inexorgame/artwork/master/logo/logo_rendered.png" style="width: 120   px; height: 80px">
+    <div class="footer-text">NHN Entertainment. Frontend Development Lab</div>
 </footer>
-
 <script>prettyPrint();</script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/tui-doc.js"></script>
 <script src="scripts/linenumber.js"></script>
+
+    <script>
+        var id = 'module:connector~Connector_sub'.replace(/"/g, '_');
+        var selectedApi = document.getElementById(id); // do not use jquery selector
+        var $selectedApi = $(selectedApi);
+
+        $selectedApi.removeClass('hidden');
+        $selectedApi.parent().find('.glyphicon').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+        showLnbApi();
+    </script>
+
 </body>
 </html>
