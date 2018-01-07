@@ -20,7 +20,7 @@
 </head>
 <body>
 <nav class="lnb" id="lnb">
-    <div class="logo" style="width: 120   px; height: 80px">
+    <div class="logo" style="width: 120px; height: 80px">
         
             <img src="https://raw.githubusercontent.com/inexorgame/artwork/master/logo/logo_rendered.png" width="100%" height="100%">
         
@@ -111,7 +111,7 @@ class FlexServer {
       app.use(ipfilter(['127.0.0.1', 'localhost'], {mode: 'allow', logLevel: 'deny'}));
     }
 
-    this.websockets = require('express-ws')(app);
+    this.websockets = require('express-uws')(app);
     this.app = app;
     this.apis = {};
     for (let i = 0; i &lt; this.apiNames.length; i += 1) {
@@ -313,7 +313,7 @@ module.exports = FlexServer;
 </div>
 
 <footer>
-    <img class="logo" src="https://raw.githubusercontent.com/inexorgame/artwork/master/logo/logo_rendered.png" style="width: 120   px; height: 80px">
+    <img class="logo" src="https://raw.githubusercontent.com/inexorgame/artwork/master/logo/logo_rendered.png" style="width: 120px; height: 80px">
     <div class="footer-text">NHN Entertainment. Frontend Development Lab</div>
 </footer>
 <script>prettyPrint();</script>
